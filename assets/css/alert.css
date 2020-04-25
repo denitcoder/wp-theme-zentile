@@ -1,0 +1,13 @@
+.alert {
+    display: block;
+    border-radius: 4px;
+    padding: 17px 20px;
+    font-size: 13px;
+    color: #000;
+    background: #eee;
+}
+
+.alert.--warning {
+    color: #ffffff;
+    background: #fb5959;
+}

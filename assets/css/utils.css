@@ -1,0 +1,96 @@
+/* Screen reader text */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    word-break: normal;
+    color: #000000;
+}
+
+.screen-reader-text:focus {
+    background-color: #fff;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    clip: auto !important;
+    -webkit-clip-path: none;
+    clip-path: none;
+    display: block;
+    font-size: 14px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    right: 5px;
+    width: auto;
+    height: auto;
+    z-index: 100000;
+}
+
+/* Skip link */
+.screen-reader-text.skip-link {
+    left: -9999rem;
+    top: 0;
+	z-index: 999999999;
+	text-decoration: none;
+	font-size: 14px;
+	text-decoration: none;
+	line-height: normal;
+	padding: 15px 20px;
+	z-index: 100000;
+}
+
+.screen-reader-text.skip-link:focus {
+	display: block;
+	top: 20px;
+    left: 20px;
+    right: auto;
+    outline: none;
+}
+
+/* Helpers */
+.no-content {
+    color: #c1c1c1;
+    font-size: 14px;
+}
+
+.h-truncate {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.h-break-word {
+    word-break: break-word;
+}
+
+/* Hide Scrollbar */
+.h-hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+.h-hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.wp-caption { }
+.wp-caption-text { }
+.sticky { }
+.gallery-caption { }
+.alignright {
+    float: right;
+}
+.alignleft {
+    float: left;
+}
+.aligncenter {
+    margin: 0 auto;
+    display: block;
+}

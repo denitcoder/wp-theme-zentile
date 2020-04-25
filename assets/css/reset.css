@@ -1,0 +1,15 @@
+* {
+	border: none;
+	margin: 0;
+	padding: 0;
+	transition: background-color .1s;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+blockquote::before,
+blockquote::after {
+	content: "";
+}

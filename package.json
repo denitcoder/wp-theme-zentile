@@ -1,0 +1,30 @@
+{
+    "name": "zentile",
+    "scripts": {
+        "release": "gulp release",
+        "build": "gulp build",
+        "watch": "gulp watch",
+        "i18n": "wp i18n make-pot . languages/default.pot --domain=zentile",
+        "i18n:en": "msgfmt -o languages/en_US.mo languages/en_US.po"
+    },
+    "browserslist": [
+        "defaults",
+        "not IE 11",
+        "not IE_Mob 11"
+    ],
+    "dependencies": {
+        "medium-zoom": "^1.0.5"
+    },
+    "devDependencies": {
+        "archiver": "^3.1.1",
+        "clean-css": "^4.2.3",
+        "css-declaration-sorter": "^5.1.2",
+        "gulp": "^4.0.2",
+        "postcss": "^7.0.27",
+        "postcss-import": "^12.0.1",
+        "postcss-preset-env": "^6.7.0",
+        "rollup": "^2.6.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "terser": "^4.6.11"
+    }
+}

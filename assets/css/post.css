@@ -1,0 +1,139 @@
+.post {
+    position: relative;
+    margin: 0 auto;
+}
+
+.post__header {
+    margin-bottom: 50px;
+}
+
+.post__title {
+    font-size: 35px;
+    margin-bottom: 10px;
+    word-break: break-word;
+}
+.post__title a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.post__meta {
+    font-size: 14px;
+    line-height: 1.8em;
+    color: #777;
+}
+.post__meta span {
+    margin-right: 20px;
+}
+
+.post__categories {
+    margin-bottom: 20px;
+}
+
+.post__content.typeset {
+    font-size: 16px;
+}
+
+.post__tags {
+    margin-top: 30px;
+    color: #aaa;
+    position: relative;
+    padding-left: 23px;
+    word-break: break-word;
+}
+.post__tags svg {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    fill: #2528e8;
+    width: 16px;
+}
+
+.post__comments-count {
+    margin-right: 15px;
+    box-sizing: border-box;
+    background: var(--post-comments-bg);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    right: 100%;
+    padding: 4px 7px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    min-width: 34px;
+}
+.post__comments-count:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 8px;
+    height: 8px;
+    background: var(--post-comments-bg);
+    right: 50%;
+    margin-right: -4px;
+    transform: rotate(45deg);
+}
+.post:not(.--has-comments) .post__comments-count,
+.post:not(.--has-comments) .post__comments-count:after {
+    background: #555;
+}
+.post__comments-count:hover {
+    color: #ffffff;
+}
+
+/* Author */
+.post__author {
+    margin-top: 25px;
+    font-size: 13px;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+}
+.post__author__header {
+    display: flex;
+}
+.post__author__header > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+.post__author__info {
+    padding-top: 3px;
+}
+.post__author__by {
+    color: #aaa;
+}
+.post__author__title {
+    margin-bottom: 15px;
+}
+.post__author__content {
+    line-height: 1.7em;
+}
+
+/* post__password-form */
+.post__password-form {
+    margin-top: 50px;
+    font-size: 13px;
+    background: #ffffff;
+    box-shadow: 0 0 13px #dedede;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@media (--viewport-5) {
+    .post__title {
+        font-size: 30px;
+    }
+    .post__content.typeset {
+        font-size: 15px;
+    }
+}
+@media (--viewport-9) {
+    .post__comments-count {
+        display: none;
+    }
+}

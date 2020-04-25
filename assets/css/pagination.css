@@ -1,0 +1,37 @@
+.comments-pagination,
+.pagination {
+    margin-top: 40px;
+    font-size: 13px;
+}
+.comments-pagination .nav-links,
+.pagination .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.post-page-numbers,
+.page-numbers {
+    padding: 10px 15px;
+    background: #eeeeee;
+    color: #777;
+    border-radius: 3px;
+    margin: 3px;
+}
+.post-page-numbers.current,
+.page-numbers.current {
+    cursor: default;
+    user-select: none;
+    background: var(--active-bg-color);
+    color: var(--active-fg-color);
+}
+a.post-page-numbers:hover,
+a.page-numbers:hover {
+    background: #ddd;
+    color: #000;
+}
+a.post-page-numbers.dots,
+.page-numbers.dots {
+    opacity: 0.5;
+    cursor: default;
+    user-select: none;
+}

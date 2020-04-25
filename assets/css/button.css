@@ -1,0 +1,85 @@
+.button {
+    display: inline-block;
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 8px 16px;
+    line-height: 1.5;
+    border: none;
+    cursor: pointer;
+}
+.button:focus {
+    box-shadow: inset 0 0 0 1px #b4cc2a;
+    outline: none;
+}
+
+.button {
+    background: #545c71;
+}
+.button:hover {
+    background: #485169;
+    text-decoration: none;
+}
+.button:active {
+    background: #000;
+}
+
+.button.--primary {
+    background: #c6e226;
+    color: #000000;
+}
+.button.--primary:hover {
+    background: #b4cc2a;
+}
+.button.--primary:active {
+    background: #9eb619;
+}
+
+.button.--danger {
+    background: #dc3545;
+}
+.button.--danger:hover {
+    background: #c82333;
+}
+.button.--danger:active {
+    background: #000000;
+}
+
+.button.--transparent {
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.2);
+}
+.button.--transparent:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+.button.--transparent:active {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.button.--block {
+    width: 100%;
+    display: block;
+}
+.button.--small {
+    font-size: 12px;
+    padding: 5px 12px;
+}
+.button.--small .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    position: relative;
+    top: 1px;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+button:disabled {
+    opacity: 0.4;
+}

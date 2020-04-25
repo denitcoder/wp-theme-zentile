@@ -1,0 +1,25 @@
+:root {
+    --content-single-width: 700px;
+    --site-padding: 20px;
+
+    --font-family: 'Open Sans', sans-serif;
+    --font-size: 15px;
+
+    --active-bg-color: linear-gradient(45deg, #decf21, #a2b903);;
+    --active-fg-color: #fff;
+
+    --dark-link: #000;
+    --dark-link-hover: #f00;
+
+    --post-comments-bg: #bfb90d;
+}
+
+@custom-media --viewport-4 (width < 480px);
+@custom-media --viewport-5 (width < 550px);
+@custom-media --viewport-6 (width < 650px);
+@custom-media --viewport-7 (width < 768px);
+@custom-media --viewport-8 (width < 850px);
+@custom-media --viewport-9 (width < 992px);
+@custom-media --viewport-12 (width < 1200px);
+@custom-media --viewport-14 (width < 1400px);
+@custom-media --viewport-16 (width < 1600px);

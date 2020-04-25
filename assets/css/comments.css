@@ -1,0 +1,153 @@
+.comments-wrapper {
+    margin: 50px 0 0;
+}
+
+.comments__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#comments:target .comments__title:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    bottom: 0;
+    border-left: 5px solid #b4cc2a;
+}
+
+.comment:not(:last-child) {
+    margin-bottom: 25px;
+}
+.comment-body {
+    display: flex;
+    margin-bottom: 25px;
+    position: relative;
+}
+.comment-body:last-child {
+    margin-bottom: 0;
+}
+
+.comment-body .avatar {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.comment__meta {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.comment__meta > *:not(:last-child) {
+    margin-right: 15px;
+}
+
+.comment__user {
+    font-size: 16px;
+    font-weight: 700;
+    word-break: break-word;
+    color: #555;
+}
+.comment.bypostauthor .comment__user {
+    background: #c6e226;
+    border-radius: 3px;
+    padding: 0 5px;
+    color: #000000;
+}
+
+.comment__date-url {
+    color: #aaaaaa;
+    white-space: nowrap;
+}
+.comment__date-url:hover {
+    color: #777777;
+}
+
+/* Content */
+.comment__content.typeset {
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+/* Footer */
+.comment__footer {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.comment__footer a {
+    color: #aaa;
+}
+.comment__footer a:hover {
+    color: #777777;
+}
+.comment__footer a:not(:last-child) {
+    margin-right: 15px;
+}
+
+.comment > .comment {
+    margin-left: 65px;
+}
+
+.comment:target > .comment-body:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    bottom: 0;
+    border-left: 5px solid #b4cc2a;
+}
+
+.comment__awaiting-moderation {
+    margin-bottom: 7px;
+}
+.comments__closed {
+    margin-top: 60px;
+}
+
+/* Respond */
+.comment-respond {
+    margin-top: 60px;
+    padding: 15px 20px 20px;
+    box-shadow: 0 0 13px #dedede;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.comments__title {
+    justify-content: space-between;
+    display: flex;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.comments__title small {
+    font-size: 14px;
+    font-weight: normal;
+}
+.comment-notes {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.logged-in-as {
+    display: none;
+}
+.comment-respond textarea {
+    height: 80px;
+}
+.comment-respond .form-submit {
+    margin-bottom: 0;
+}
+
+.comment .comment-respond {
+    margin: 0 0 30px 65px;
+}
+
+@media (--viewport-5) {
+    .comment-body .avatar {
+        width: 30px;
+        height: 30px;
+    }
+    .comments__title {
+        font-size: 16px;
+    }
+}

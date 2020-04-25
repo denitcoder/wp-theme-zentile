@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body .editor-post-title__block .editor-post-title__input {
+    font-family: var(--font-family);
+    font-size: 35px;
+    word-break: break-word;
+}
+
+body .wp-block {
+    font-family: var(--font-family);
+    max-width: var(--content-single-width);
+}

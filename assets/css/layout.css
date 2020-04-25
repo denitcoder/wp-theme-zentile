@@ -1,0 +1,36 @@
+#site-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+#site-wrapper {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 var(--site-padding);
+}
+
+#site-content {
+    flex-grow: 1;
+    order: 2;
+    min-width: 0; /* flexbox text-overflow hack */
+}
+
+body.layout--hide-sidebar #site-content {
+    max-width: var(--content-single-width);
+    margin: 0 auto;
+}
+body.layout--show-sidebar.page #site-sidebar,
+body.layout--show-sidebar.single #site-sidebar {
+    margin-right: 65px;
+}
+
+@media (--viewport-9) {
+    #site-container {
+        width: auto;
+    }
+}
+@media (--viewport-4) {
+    :root {
+        --site-padding: 10px;
+    }
+}

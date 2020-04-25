@@ -1,0 +1,14 @@
+#page-not-found {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 150px 0;
+}
+#page-not-found h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    color: #ec5959;
+}
+#page-not-found p {
+    line-height: 1.7em;
+}

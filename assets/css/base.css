@@ -1,0 +1,32 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #2143e8;
+    text-decoration: none;
+    transition: background-color .2s, color .2s;
+}
+
+a:hover,
+a:focus {
+    color: #142b9f;
+    text-decoration: none;
+}
+
+/* Dark link */
+.has-dark-link a,
+.dark-link {
+    color: var(--dark-link);
+}
+.has-dark-link a:hover,
+.has-dark-link a:focus,
+.dark-link:hover,
+.dark-link:focus {
+    color: var(--dark-link-hover);
+}

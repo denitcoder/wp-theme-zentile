@@ -1,0 +1,157 @@
+.typeset {
+    line-height: 1.8em;
+    word-break: break-word;
+}
+
+.typeset ol,
+.typeset ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.typeset hr {
+    border-bottom: 1px dashed #aaa;
+    margin: 0 30%;
+}
+
+.typeset .has-small-font-size {
+    line-height: 1.6em;
+}
+.typeset .has-large-font-size {
+    line-height: 1.4em;
+}
+.typeset .has-larger-font-size {
+    line-height: 1.5em;
+}
+
+body .editor-styles-wrapper [data-block],
+.typeset p,
+.typeset > [class^="wp-block-"] {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.typeset p:last-child,
+.typeset > [class^="wp-block-"]:last-child {
+    margin-bottom: 0;
+}
+
+/* Image/Video ------------------------------------------------------------ */
+.typeset img {
+    height: auto;
+}
+.typeset figure audio,
+.typeset figure video,
+.typeset figure img {
+    vertical-align: top;
+    border-radius: 5px;
+}
+.typeset [class^="wp-block-"] figcaption {
+    margin-top: 10px;
+    text-align: left;
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+}
+
+
+/* Headings ------------------------------------------------------------ */
+.typeset h1 {
+    font-size: 40px;
+}
+.typeset h2 {
+    font-size: 35px;
+}
+.typeset h3 {
+    font-size: 30px;
+}
+.typeset h4 {
+    font-size: 25px;
+}
+.typeset h5 {
+    font-size: 20px;
+}
+.typeset h6 {
+    font-size: 15px;
+}
+.typeset h1,
+.typeset h2,
+.typeset h3,
+.typeset h4,
+.typeset h5,
+.typeset h6 {
+    line-height: 1.5em;
+    margin: 0 0 15px;
+}
+
+
+/* Quotes ------------------------------------------------------------ */
+.typeset blockquote {
+    padding: 15px 20px;
+    border-left: 5px solid #000;
+    background: #fafafa;
+}
+.typeset blockquote p:not(:last-child) {
+    margin-bottom: 10px;
+}
+.typeset cite {
+    margin-top: 10px;
+    font-style: italic;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+
+/* Code ------------------------------------------------------------ */
+.typeset *:not(pre) code {
+    font-size: 13px;
+    background: #333;
+    color: #eee;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+body .wp-block-code {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+body .wp-block-code .block-editor-plain-text,
+.typeset pre {
+    font-size: 13px;
+    line-height: 18px;
+    background: #333;
+    color: #eee;
+    overflow: auto;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.typeset pre code {
+    background: transparent;
+    padding: 0;
+}
+
+
+/* Table ------------------------------------------------------------ */
+.typeset .wp-block-table table {
+    border-collapse: collapse;
+    font-size: 14px;
+    overflow-x: auto;
+    width: fit-content;
+    max-width: 100%;
+    word-break: normal;
+}
+.wp-block-table table th,
+.wp-block-table table td {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+}
+.typeset .wp-block-table.is-style-stripes {
+    border-bottom: none;
+}
+.typeset .wp-block-table__cell-content {
+    padding: 0;
+}

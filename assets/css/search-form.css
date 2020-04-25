@@ -1,0 +1,36 @@
+.search-form {
+    display: flex;
+    max-width: 400px;
+    position: relative;
+}
+.search-form label {
+    flex-grow: 1;
+    margin: 0;
+}
+
+input[type=search].search-form__input {
+    appearance: none;
+    border-radius: 100px;
+    border: none;
+    background: #eee;
+    padding: 10px 20px 10px 45px;
+    margin: 0;
+    height: 40px;
+}
+input[type=search].search-form__input:focus {
+    background-color: #f4f4f4;
+}
+
+.search-form__submit {
+    display: none;
+}
+.search-form svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 15px;
+    margin-top: -10px;
+    fill: #ccc;
+    transition: fill .2s;
+}
