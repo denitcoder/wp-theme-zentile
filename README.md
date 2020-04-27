@@ -28,17 +28,7 @@ Zentile is a light-weight magazine theme inspired by Yandex.Zen.
 
 ## Installation
 
-### Admin panel
-
-- Go to **Appearance > Themes > Add new**.
-- Type `Zentile` in the search field.
-- Hit the **Install** button.
-
-or
-
-### Manually
-
-- Download the theme from **releases** page on GitHub or from wordpress.org.
+- Download the theme from the **[releases](https://github.com/denitcoder/wp-theme-zentile/releases)** page on GitHub.
 - Unzip the archive to the `/wp-content/themes/` directory.
 - Go to **Appearance > Themes** and activate it.
 
