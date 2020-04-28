@@ -3,13 +3,6 @@
 class Zentile_Walker_Comment extends Walker_Comment {
     protected function html5_comment($comment, $depth, $args) {
         $tag = ('div' === $args['style']) ? 'div' : 'li';
-        $commenter = wp_get_current_commenter();
-
-        if ($commenter['comment_author_email']) {
-            $moderation_note = __('Your comment is awaiting moderation.');
-        } else {
-            $moderation_note = __('Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.');
-        }
     
         ?>
         <<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class($this->has_children ? 'parent' : '', $comment); ?>>
@@ -31,7 +24,7 @@ class Zentile_Walker_Comment extends Walker_Comment {
 
                     <?php 
                     if ('0' == $comment->comment_approved) {
-                        echo zentile_cmp_alert($moderation_note, 'comment__awaiting-moderation --warning');
+                        echo zentile_cmp_alert(__('Your comment is awaiting moderation.'), 'comment__awaiting-moderation --warning');
                     }
                     ?>
 
