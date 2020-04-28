@@ -5,7 +5,7 @@
         "build": "gulp build",
         "watch": "gulp watch",
         "i18n": "wp i18n make-pot . languages/default.pot --domain=zentile",
-        "i18n:en": "msgfmt -o languages/en_US.mo languages/en_US.po"
+        "i18n:ru": "msgfmt -o languages/ru_RU.mo languages/ru_RU.po"
     },
     "browserslist": [
         "defaults",

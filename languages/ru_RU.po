@@ -1,0 +1,125 @@
+# Copyright (C) 2020 denitcoder
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Zentile 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zentile\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-04-22T12:43:02+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: zentile\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Theme Name of the theme
+msgid "Zentile"
+msgstr "Zentile"
+
+#. Theme URI of the theme
+msgid "https://github.com/denitcoder/wp-theme-zentile"
+msgstr "https://github.com/denitcoder/wp-theme-zentile"
+
+#. Description of the theme
+msgid "Zentile is a light-weight magazine theme inspired by Yandex.Zen"
+msgstr "Zentile - легковесная, плиточная тема, вдохновленная сервисом Yandex.Zen"
+
+#. Author of the theme
+msgid "denitcoder"
+msgstr "denitcoder"
+
+#. Author URI of the theme
+msgid "https://github.com/denitcoder"
+msgstr "https://github.com/denitcoder"
+
+#: 404.php:4
+msgid "Page Not Found"
+msgstr "Страница не найдена"
+
+#: 404.php:5
+msgid "The page you were looking for could not be found. It might have been removed, renamed, or did not exist in the first place."
+msgstr "Страница не найдена. Возможно, она была удалена, переименована или никогда не существовала."
+
+#: comments.php:29
+msgid "No comments yet"
+msgstr "Нет комментариев"
+
+#: comments.php:43
+msgid "Comments are closed."
+msgstr "Комментарии закрыты."
+
+#. translators: %s number of posts
+#: components/archive-header.php:24
+msgid "%s post"
+msgid_plural "%s posts"
+msgstr[0] "%s пост"
+msgstr[1] "%s поста"
+msgstr[2] "%s постов"
+
+#: components/post-list.php:14
+msgid "No posts yet"
+msgstr "Нет постов"
+
+#: components/post.php:60
+msgid "Published by"
+msgstr "Автор публикации"
+
+#: components/sidebar.php:13
+#: functions.php:87
+msgid "Primary Menu"
+msgstr "Главное меню"
+
+#: footer.php:12
+msgid "To the top"
+msgstr "Наверх"
+
+#: functions.php:106
+msgid "Sidebar"
+msgstr "Сайдбар"
+
+#: functions.php:107
+msgid "Widgets in this area will be displayed in the left sidebar."
+msgstr "Виджеты будут отображаться слева в сайдбаре"
+
+#: header.php:22
+msgid "Skip to the content"
+msgstr "Перейти к содержимому"
+
+#: inc/class-zentile-customize.php:39
+msgid "Show author bio at the end of the post"
+msgstr "Показывать информацию об авторе в конце поста"
+
+#: inc/class-zentile-customize.php:60
+msgid "Always show sidebar"
+msgstr "Всегда показывать сайдбар"
+
+#. translators: %s mins/hours/days ago
+#: inc/utils.php:5
+msgid "%s ago"
+msgstr "%s назад"
+
+#. translators: Search results
+#: search.php:8
+msgid "Search"
+msgstr "Поиск"
+
+#. translators: %s: Number of search results
+#: search.php:11
+msgid "We found %s result for your search."
+msgid_plural "We found %s results for your search."
+msgstr[0] "Найден %s результат."
+msgstr[1] "Найдено %s результата."
+msgstr[2] "Найдено %s результатов."
+
+#: searchform.php:5
+msgctxt "Placeholder"
+msgid "Search"
+msgstr "Поиск"
+
+#. translators: All categories
+#: widgets/class-zentile-widget-categories.php:39
+msgid "All"
+msgstr "Все"
