@@ -61,7 +61,9 @@
                             </div>
 
                             <h2 class="post__author__title h-truncate has-dark-link">
-                                <?php echo get_the_author_link() ?>
+                                <a class="author-link" href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" rel="author">
+                                    <?php echo esc_html(get_the_author()) ?>
+                                </a>
                             </h2>
                         </div>
                     </div>
