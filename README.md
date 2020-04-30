@@ -1,5 +1,9 @@
 # Zentile
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/denitcoder/wp-theme-zentile?style=flat-square)
+![GitHub All Releases](https://img.shields.io/github/downloads/denitcoder/wp-theme-zentile/total?style=flat-square)
+![GitHub](https://img.shields.io/github/license/denitcoder/wp-theme-zentile?style=flat-square)
+
 Zentile is a light-weight magazine theme inspired by Yandex.Zen.
 
 ![Screenshot](screenshot.png)
