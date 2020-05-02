@@ -6,6 +6,8 @@
 
 Zentile is a light-weight magazine theme inspired by Yandex.Zen.
 
+**[Demo](https://wpshowcase.site/)** • **[Download v1.0](https://github.com/denitcoder/wp-theme-zentile/releases/download/v1.0/zentile-1.0.zip)**
+
 ![Screenshot](screenshot.png)
 
 ## Features
@@ -70,5 +72,6 @@ Zentile
 ├── releases - Zipped builds ready to publish
 ├── components - HTML components (buttons, alerts etc)
 ├── inc - Classes and utils
-└── widgets - Custom widget classes
+├── widgets - Custom widget classes
+└── languages - Translations
 ```
