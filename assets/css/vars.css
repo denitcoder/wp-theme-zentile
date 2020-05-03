@@ -5,13 +5,11 @@
     --font-family: 'Open Sans', sans-serif;
     --font-size: 15px;
 
-    --active-bg-color: linear-gradient(45deg, #decf21, #a2b903);;
+    --active-bg-color: #555;
     --active-fg-color: #fff;
 
     --dark-link: #000;
     --dark-link-hover: #f00;
-
-    --post-comments-bg: #bfb90d;
 }
 
 @custom-media --viewport-4 (width < 480px);

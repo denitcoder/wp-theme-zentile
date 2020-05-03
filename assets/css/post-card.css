@@ -143,11 +143,13 @@
 }
 
 .post-card__comments {
+    --post-comments-bg: #fff;
+
     border-radius: 3px;
     background: var(--post-comments-bg);
-    color: #fff;
-    padding: 1px 2px 2px;
-    min-width: 20px;
+    color: #000;
+    padding: 1px 5px 2px;
+    min-width: 16px;
     text-align: center;
     font-weight: 700;
     position: relative;
@@ -166,6 +168,7 @@
 .post-card:not(.--has-comments) .post-card__comments,
 .post-card:not(.--has-comments) .post-card__comments:after {
     background: #555;
+    color: #aaa;
 }
 
 .post-card__ribbon {

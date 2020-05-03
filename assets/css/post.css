@@ -50,6 +50,8 @@
 }
 
 .post__comments-count {
+    --post-comments-bg: #000;
+    
     margin-right: 15px;
     box-sizing: border-box;
     background: var(--post-comments-bg);

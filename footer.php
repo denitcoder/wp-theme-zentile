@@ -9,7 +9,10 @@
                 </div>
 
                 <a href="#site-header" class="site-footer__scroll-top">
-                    <?php _e('To the top', 'zentile') ?>
+                    <?php
+                        zentile_the_theme_svg('arrow-up');
+                        _e('To the top', 'zentile')
+                    ?>
                 </a>
 
                 <div class="site-footer__credits">

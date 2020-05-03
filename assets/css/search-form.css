@@ -1,6 +1,6 @@
 .search-form {
     display: flex;
-    max-width: 400px;
+    max-width: 600px;
     position: relative;
 }
 .search-form label {

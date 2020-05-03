@@ -39,12 +39,10 @@ body.single #site-header {
     overflow: hidden;
     display: flex;
     white-space: nowrap;
+    font-size: 14px;
 }
 #site-nav ul li {
     margin: 0 0 0 30px;
-}
-#site-nav ul li a {
-    color: #222222;
 }
 #site-nav ul li.current-menu-item a,
 #site-nav ul li.current_page_item a {
