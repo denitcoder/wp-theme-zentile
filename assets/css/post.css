@@ -51,7 +51,7 @@
 
 .post__comments-count {
     --post-comments-bg: #000;
-    
+
     margin-right: 15px;
     box-sizing: border-box;
     background: var(--post-comments-bg);
@@ -87,7 +87,7 @@
 
 /* Author */
 .post__author {
-    margin-top: 25px;
+    margin-top: 50px;
     font-size: 13px;
     background: #f7f7f7;
     padding: 20px;

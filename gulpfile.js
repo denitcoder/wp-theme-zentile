@@ -96,7 +96,7 @@ async function editorCss() {
         index: 'assets/css/index-editor-block.css',
         output: 'dist/bundle-editor-block.min.css',
         after: styles => {
-            return styles.replace(/\.typeset /g, 'body .editor-block-list__layout ');
+            return styles.replace(/\.typeset /g, 'body .block-editor-block-list__layout ');
         }
     });
 }
