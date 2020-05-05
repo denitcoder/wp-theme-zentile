@@ -21,7 +21,8 @@ Zentile is a light-weight magazine theme inspired by Yandex.Zen.
 - Theme settings
     - Cusomizable logo
     - Cusomizable background
-    - Show author bio at the end of the post
+    - Show/hide featured image at the top of the post
+    - Show/hide author bio at the end of the post
     - Always show sidebar
 - Custom widgets
     - Categories

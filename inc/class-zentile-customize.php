@@ -40,6 +40,27 @@ class Zentile_Customize {
             ]
         );
 
+        /* Show featured image ---------------------------------------------------- */
+
+        $wp_customize->add_setting(
+            'show_featured_image',
+            [
+                'capability'        => 'edit_theme_options',
+                'default'           => false,
+                'sanitize_callback' => [ __CLASS__, 'sanitize_checkbox' ],
+            ]
+        );
+
+        $wp_customize->add_control(
+            'show_featured_image',
+            [
+                'type'     => 'checkbox',
+                'section'  => 'options',
+                'priority' => 10,
+                'label'    => __('Show featured image at the top of the post', 'zentile'),
+            ]
+        );
+
         /* Always show sidebar ---------------------------------------------------- */
 
         $wp_customize->add_setting(

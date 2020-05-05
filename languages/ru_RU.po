@@ -88,6 +88,10 @@ msgstr "Виджеты будут отображаться слева в сай�
 msgid "Skip to the content"
 msgstr "Перейти к содержимому"
 
+#: inc/class-zentile-customize.php:60
+msgid "Show featured image at the top of the post"
+msgstr "Показывать изображение-обложку в начале поста"
+
 #: inc/class-zentile-customize.php:39
 msgid "Show author bio at the end of the post"
 msgstr "Показывать информацию об авторе в конце поста"

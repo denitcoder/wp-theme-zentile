@@ -34,6 +34,13 @@
     font-size: 16px;
 }
 
+.post__featured-image {
+    margin-bottom: 50px;
+    display: block;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
 .post__tags {
     margin-top: 30px;
     color: #aaa;
