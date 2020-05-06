@@ -5,7 +5,7 @@ get_header();
 global $wp_query;
 
 /* translators: Search results */
-$archive_title = __('Search', 'zentile') . ': <span>&ldquo;' . get_search_query() . '&rdquo;</span>';
+$archive_title = __('Search', 'zentile') . ': &ldquo;' . get_search_query() . '&rdquo;';
 $archive_subtitle = sprintf(
     /* translators: %s: Number of search results */
     _n(

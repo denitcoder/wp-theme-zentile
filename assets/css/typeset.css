@@ -28,7 +28,7 @@ body .editor-styles-wrapper [data-block],
 .typeset p,
 .typeset > [class^="wp-block-"] {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .typeset p:last-child,
 .typeset > [class^="wp-block-"]:last-child {
@@ -154,4 +154,20 @@ body .wp-block-code .block-editor-plain-text,
 }
 .typeset .wp-block-table__cell-content {
     padding: 0;
+}
+
+
+/* Media ------------------------------------- */
+.typeset embed,
+.typeset object {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.typeset iframe {
+    display: block;
+    max-width: 100%;
+}
+.typeset video {
+    display: block;
 }

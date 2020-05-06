@@ -29,8 +29,3 @@ body.layout--show-sidebar.single #site-sidebar {
         width: auto;
     }
 }
-@media (--viewport-4) {
-    :root {
-        --site-padding: 10px;
-    }
-}

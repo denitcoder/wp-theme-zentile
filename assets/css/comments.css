@@ -1,3 +1,6 @@
+.comments {
+    --indent: 65px;
+}
 .comments-wrapper {
     margin: 50px 0 0;
 }
@@ -87,7 +90,7 @@
 }
 
 .comment > .comment {
-    margin-left: 65px;
+    margin-left: var(--indent);
 }
 
 .comment:target > .comment-body:before {
@@ -139,10 +142,13 @@
 }
 
 .comment .comment-respond {
-    margin: 0 0 30px 65px;
+    margin: 0 0 30px var(--indent);
 }
 
 @media (--viewport-5) {
+    .comments {
+        --indent: 45px;
+    }
     .comment-body .avatar {
         width: 30px;
         height: 30px;

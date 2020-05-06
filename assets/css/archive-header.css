@@ -3,9 +3,6 @@
     align-items: flex-start;
     margin-bottom: 50px;
 }
-.archive-header__title span {
-    color: #777777;
-}
 .archive-header__count {
     color: #aaaaaa;
     font-size: 14px;

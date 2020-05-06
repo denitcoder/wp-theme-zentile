@@ -58,7 +58,7 @@ body.single #site-header {
     flex-shrink: 0;
 }
 .mobile-nav-toggle svg {
-    fill: #777;
+    fill: #000;
     transition: fill .2s;
 }
 .mobile-nav-toggle:hover svg {
