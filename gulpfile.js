@@ -116,9 +116,10 @@ async function getThemeInfo() {
 async function pack() {
     const info = await getThemeInfo();
     const name = info['Theme Name'].toLowerCase();
+    const version = info['Version'];
 
     const outputDir = 'releases';
-    const outputPath = join(outputDir, `${name}.zip`);
+    const outputPath = join(outputDir, `${name}-${version}.zip`);
     
     await fs.promises.mkdir(outputDir, { recursive: true });
     
