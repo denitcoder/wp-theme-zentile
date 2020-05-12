@@ -27,6 +27,7 @@ Zentile is a light-weight magazine theme inspired by Yandex.Zen.
 - Custom widgets
     - Categories
     - Recent comments
+    - Recent posts
 
 ## Requirements
 
@@ -42,7 +43,7 @@ Zentile is a light-weight magazine theme inspired by Yandex.Zen.
 ## Post installation
 
 - Go to **Settings > Reading** and set **Blog pages show at most** to 5n (e.g. 5, 10, ...).
-- Go to **Appearance > Widgets** and add widgets **Zentile: Categories** and **Zentile: Recent Comments**.
+- Go to **Appearance > Widgets** and add widgets **Zentile: Categories**, **Zentile: Recent Comments** and **Zentile: Recent Posts**.
 - Go to **Appearance > Customize** and customize theme as you need.
 
 ## Development

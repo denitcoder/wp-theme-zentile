@@ -10,6 +10,7 @@ require get_template_directory() . '/inc/class-zentile-walker-category.php';
 // Widgets
 require get_template_directory() . '/widgets/class-zentile-widget-categories.php';
 require get_template_directory() . '/widgets/class-zentile-widget-recent-comments.php';
+require get_template_directory() . '/widgets/class-zentile-widget-recent-posts.php';
 
 // Components
 require get_template_directory() . '/components/archive-header.php';
@@ -46,6 +47,7 @@ function zentile_theme_support() {
 
     set_post_thumbnail_size(620, 9999);
     add_image_size('zentile-thumbnail-post', $content_width, 9999);
+    add_image_size('zentile-thumbnail-post-small', 50, 9999);
 
     load_theme_textdomain('zentile');
 }
@@ -96,6 +98,7 @@ add_action('init', 'zentile_menus');
 function zentile_sidebar_registration() {
     register_widget('Zentile_Widget_Categories');
     register_widget('Zentile_Widget_Recent_Comments');
+    register_widget('Zentile_Widget_Recent_Posts');
     
     register_sidebar([
         'before_title'  => '<h2 class="widget-title">',
