@@ -39,6 +39,6 @@ function zentile_cmp_post_card() {
             ?>
         </div>
 
-        <div class="post-card__bg" style="background-image: url('<?php esc_url(the_post_thumbnail_url()) ?>')"></div>
+        <div class="post-card__bg" style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
     </article>
 <?php }

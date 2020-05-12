@@ -32,7 +32,7 @@
             zentile_cmp_password_form();
         } else { ?>
             <?php if (get_theme_mod('show_featured_image', false)) { ?>
-                <img src="<?php esc_url(the_post_thumbnail_url('zentile-thumbnail-post')) ?>" alt="<?php echo esc_attr(get_the_title()) ?>" class="post__featured-image">
+                <img src="<?php the_post_thumbnail_url('zentile-thumbnail-post') ?>" alt="<?php echo esc_attr(get_the_title()) ?>" class="post__featured-image">
             <?php } ?>
 
             <div class="post__content typeset">
