@@ -64,6 +64,9 @@ npm run build
 
 # or watch for changes
 npm run watch
+
+# or compile all assets and create the archive with the theme (e.g. <zentile>/releases/zentile-x.y.zip)
+npm run release
 ```
 
 ## Structure
