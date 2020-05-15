@@ -82,7 +82,7 @@
         <?php } ?>
 
         <?php if (zentile_show_comments_list() && ! post_password_required()) {
-            echo '<a href="#comments" class="post__comments-count">' . absint(get_comments_number()) . '</a>';
+            echo '<a href="#comments" class="post__comments-count" tabindex="-1">' . absint(get_comments_number()) . '</a>';
         } ?>
     </article>
 <?php }
