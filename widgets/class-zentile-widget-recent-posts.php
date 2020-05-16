@@ -2,7 +2,7 @@
 
 class Zentile_Widget_Recent_Posts extends WP_Widget {
     public function __construct() {
-        $widget_name = wp_get_theme() . ': ' . __('Zentile: Recent Posts');
+        $widget_name = wp_get_theme() . ': ' . __('Recent Posts');
         $widget_ops = [
             'classname' => 'zentile_widget_recent_entries',
             'description' => __('Your site&#8217;s most recent Posts.'),
@@ -106,10 +106,10 @@ class Zentile_Widget_Recent_Posts extends WP_Widget {
         <input class="tiny-text" id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="number" step="1" min="1" value="<?php echo $number; ?>" size="3" /></p>
 
         <p><input class="checkbox" type="checkbox"<?php checked($show_date); ?> id="<?php echo $this->get_field_id('show_date'); ?>" name="<?php echo $this->get_field_name('show_date'); ?>" />
-        <label for="<?php echo $this->get_field_id('show_date'); ?>"><?php _e('Display post date?'); ?></label></p>
+        <label for="<?php echo $this->get_field_id('show_date'); ?>"><?php _e('Show post date', 'zentile'); ?></label></p>
 
         <p><input class="checkbox" type="checkbox"<?php checked($show_image); ?> id="<?php echo $this->get_field_id('show_image'); ?>" name="<?php echo $this->get_field_name('show_image'); ?>" />
-        <label for="<?php echo $this->get_field_id('show_image'); ?>"><?php _e('Display featured image?'); ?></label></p>
+        <label for="<?php echo $this->get_field_id('show_image'); ?>"><?php _e('Show featured image', 'zentile'); ?></label></p>
         <?php
     }
 }

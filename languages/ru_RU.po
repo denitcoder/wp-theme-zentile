@@ -127,3 +127,11 @@ msgstr "Поиск"
 #: widgets/class-zentile-widget-categories.php:39
 msgid "All"
 msgstr "Все"
+
+#: widgets/class-zentile-widget-recent-posts.php:109
+msgid "Show post date"
+msgstr "Отображать дату записи"
+
+#: widgets/class-zentile-widget-recent-posts.php:112
+msgid "Show featured image"
+msgstr "Отображать изображение-обложку"

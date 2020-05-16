@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-04-26T01:24:16+00:00\n"
+"POT-Creation-Date: 2020-05-16T01:03:30+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: zentile\n"
@@ -66,7 +66,7 @@ msgid "Published by"
 msgstr ""
 
 #: components/sidebar.php:13
-#: functions.php:87
+#: functions.php:89
 msgid "Primary Menu"
 msgstr ""
 
@@ -74,11 +74,11 @@ msgstr ""
 msgid "To the top"
 msgstr ""
 
-#: functions.php:106
+#: functions.php:109
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:107
+#: functions.php:110
 msgid "Widgets in this area will be displayed in the left sidebar."
 msgstr ""
 
@@ -123,4 +123,12 @@ msgstr ""
 #. translators: All categories
 #: widgets/class-zentile-widget-categories.php:39
 msgid "All"
+msgstr ""
+
+#: widgets/class-zentile-widget-recent-posts.php:109
+msgid "Show post date"
+msgstr ""
+
+#: widgets/class-zentile-widget-recent-posts.php:112
+msgid "Show featured image"
 msgstr ""
