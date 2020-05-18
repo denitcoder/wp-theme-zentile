@@ -4,7 +4,7 @@
 ![GitHub All Releases](https://img.shields.io/github/downloads/denitcoder/wp-theme-zentile/total?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/denitcoder/wp-theme-zentile?style=flat-square)
 
-Zentile is a light-weight magazine theme inspired by Yandex.Zen.
+Zentile is a lightweight magazine theme inspired by Yandex.Zen.
 
 **[Demo](https://wpshowcase.site/)** • **[Download v1.2](https://github.com/denitcoder/wp-theme-zentile/releases/download/v1.2/zentile-1.2.zip)**
 
@@ -19,8 +19,8 @@ Zentile is a light-weight magazine theme inspired by Yandex.Zen.
 - Translation-ready
 - Built-in image light box
 - Theme settings
-    - Cusomizable logo
-    - Cusomizable background
+    - Customizable logo
+    - Customizable background
     - Show/hide featured image at the top of the post
     - Show/hide author bio at the end of the post
     - Always show sidebar
