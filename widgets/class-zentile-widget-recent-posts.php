@@ -2,10 +2,10 @@
 
 class Zentile_Widget_Recent_Posts extends WP_Widget {
     public function __construct() {
-        $widget_name = wp_get_theme() . ': ' . __('Recent Posts');
+        $widget_name = wp_get_theme() . ': ' . __('Recent Posts', 'zentile');
         $widget_ops = [
             'classname' => 'zentile_widget_recent_entries',
-            'description' => __('Your site&#8217;s most recent Posts.'),
+            'description' => __('Your site&#8217;s most recent Posts.', 'zentile'),
             'customize_selective_refresh' => true,
         ];
 
@@ -17,7 +17,7 @@ class Zentile_Widget_Recent_Posts extends WP_Widget {
             $args['widget_id'] = $this->id;
         }
 
-        $title = (! empty($instance['title'])) ? $instance['title'] : __('Recent Posts');
+        $title = (! empty($instance['title'])) ? $instance['title'] : __('Recent Posts', 'zentile');
         $title = apply_filters('widget_title', $title, $instance, $this->id_base);
         $number = (! empty($instance['number'])) ? absint($instance['number']) : 5;
         $show_date = isset($instance['show_date']) ? $instance['show_date'] : true;
@@ -55,7 +55,7 @@ class Zentile_Widget_Recent_Posts extends WP_Widget {
             <?php foreach ($result->posts as $recent_post) { ?>
                 <?php
                 $post_title   = get_the_title($recent_post->ID);
-                $title        = (! empty($post_title)) ? $post_title : __('(no title)');
+                $title        = (! empty($post_title)) ? $post_title : __('(no title)', 'zentile');
                 $aria_current = '';
 
                 if (get_queried_object_id() === $recent_post->ID) {
@@ -65,7 +65,8 @@ class Zentile_Widget_Recent_Posts extends WP_Widget {
                 <li class="zentile-widget-recent-posts__item has-dark-link">
                     <?php if ($show_image) { ?>
                         <a href="<?php the_permalink($recent_post->ID); ?>"
-                            class="zentile-widget-recent-posts__image"
+                            tabindex="-1"
+                            class="zentile-widget-recent-posts__image h-shadow-focus"
                             style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url($recent_post->ID, 'zentile-thumbnail-post-small')) ?>')"></a>
                     <?php } ?>
 
@@ -99,10 +100,10 @@ class Zentile_Widget_Recent_Posts extends WP_Widget {
         $show_date = isset($instance['show_date']) ? (bool) $instance['show_date'] : true;
         $show_image = isset($instance['show_image']) ? (bool) $instance['show_image'] : true;
         ?>
-        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'zentile'); ?></label>
         <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></p>
 
-        <p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of posts to show:'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of posts to show', 'zentile'); ?></label>
         <input class="tiny-text" id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="number" step="1" min="1" value="<?php echo $number; ?>" size="3" /></p>
 
         <p><input class="checkbox" type="checkbox"<?php checked($show_date); ?> id="<?php echo $this->get_field_id('show_date'); ?>" name="<?php echo $this->get_field_name('show_date'); ?>" />

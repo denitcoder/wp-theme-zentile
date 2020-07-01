@@ -59,9 +59,13 @@ add_action('after_setup_theme', 'zentile_theme_support');
  */
 function zentile_register_assets() {
     $theme_version = wp_get_theme()->get('Version');
+    $font = has_custom_logo()
+        ? 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'
+        : 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Condensed&display=swap';
 
-    wp_enqueue_script('zentile-js-bundle', get_template_directory_uri() . '/dist/bundle.min.js', null, $theme_version, false);
+    wp_enqueue_style('zentile-google-fonts', $font, null, null);
     wp_enqueue_style('zentile-css-bundle', get_template_directory_uri() . '/dist/bundle.min.css', null, $theme_version);
+    wp_enqueue_script('zentile-js-bundle', get_template_directory_uri() . '/dist/bundle.min.js', null, $theme_version);
 
     if ((! is_admin()) && is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');

@@ -2,10 +2,10 @@
 
 class Zentile_Widget_Recent_Comments extends WP_Widget {
     public function __construct() {
-        $widget_name = wp_get_theme() . ': ' . __('Recent Comments');
+        $widget_name = wp_get_theme() . ': ' . __('Recent Comments', 'zentile');
         $widget_ops = [
             'classname' => 'zentile_widget_recent_comments',
-            'description' => __('Your site&#8217;s most recent comments.'),
+            'description' => __('Your site&#8217;s most recent comments.', 'zentile'),
             'customize_selective_refresh' => true,
         ];
 
@@ -14,7 +14,7 @@ class Zentile_Widget_Recent_Comments extends WP_Widget {
 
     public function widget($args, $instance) {
         $output = '';
-        $title = (! empty($instance['title'])) ? $instance['title'] : __('Recent Comments');
+        $title = (! empty($instance['title'])) ? $instance['title'] : __('Recent Comments', 'zentile');
         $title = apply_filters('widget_title', $title, $instance, $this->id_base);
         $number = (! empty($instance['number'])) ? absint($instance['number']) : 5;
         $number = $number ? $number : 5;
@@ -81,10 +81,10 @@ class Zentile_Widget_Recent_Comments extends WP_Widget {
         $title = isset($instance['title']) ? $instance['title'] : '';
         $number = isset($instance['number']) ? absint($instance['number']) : 5;
         ?>
-        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'zentile'); ?></label>
         <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 
-        <p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of comments to show:'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of comments to show', 'zentile'); ?></label>
         <input class="tiny-text" id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="number" step="1" min="1" value="<?php echo $number; ?>" size="3" /></p>
         <?php
     }

@@ -1,10 +1,32 @@
 === Zentile ===
 Contributors: denitcoder
+Version: 1.2
 Tested up to: 5.4
-Stable tag: 1.2
+Requires at least: 5.3
+Requires PHP: 5.6
 Author URI: https://github.com/denitcoder
 Theme URI: https://github.com/denitcoder/wp-theme-zentile
-License: GPLv2 or later
+License: GPL-2.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Zentile is a light-weight magazine theme made for blogging.
+Zentile is a light-weight magazine theme made for blogging. The theme supports only one-level primary menu.
+
+== Resources ==
+
+Illustrations in screenshot.png by Unsplash
+License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://unsplash.com/
+
+medium-zoom by francoischalifour
+License: MIT
+Source: https://github.com/francoischalifour/medium-zoom
+
+Bespoke Icons Created For Twenty Twenty
+License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
+List of bespoke icons:
+- Search icon
+
+Feather Icons
+Copyright (c) 2013-2017 Cole Bemis
+License: MIT License, https://opensource.org/licenses/MIT
+Source: https://feathericons.com

@@ -13,7 +13,7 @@ class Zentile_Customize {
         $wp_customize->add_section(
             'options',
             [
-                'title'      => __('Theme Options'),
+                'title'      => __('Theme Options', 'zentile'),
                 'priority'   => 40,
                 'capability' => 'edit_theme_options',
             ]

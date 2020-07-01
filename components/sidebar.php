@@ -3,9 +3,9 @@
 function zentile_cmp_sidebar() { ?>
     <aside id="site-sidebar" role="complementary" <?php if (!zentile_show_sidebar()) echo 'class="--hidden"' ?>>
         <div class="sidebar__widgets h-hide-scrollbar">
-            <div class="sidebar__close js-mobile-nav-close">
+            <button class="sidebar__close js-mobile-nav-close" aria-label="<?php esc_attr_e('Close navigation menu', 'zentile') ?>">
                 <?php zentile_the_theme_svg('cross'); ?>
-            </div>
+            </button>
 
             <?php if (zentile_show_primary_nav()) { ?>
                 <div class="widget zentile-widget-mobile-nav">

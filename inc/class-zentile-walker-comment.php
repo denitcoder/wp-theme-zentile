@@ -24,7 +24,7 @@ class Zentile_Walker_Comment extends Walker_Comment {
 
                     <?php 
                     if ('0' == $comment->comment_approved) {
-                        echo zentile_cmp_alert(__('Your comment is awaiting moderation.'), 'comment__awaiting-moderation --warning');
+                        echo zentile_cmp_alert(__('Your comment is awaiting moderation.', 'zentile'), 'comment__awaiting-moderation --warning');
                     }
                     ?>
 
@@ -40,7 +40,7 @@ class Zentile_Walker_Comment extends Walker_Comment {
                             'max_depth' => $args['max_depth'],
                         ]));
 
-                        edit_comment_link(__('Edit'));
+                        edit_comment_link(__('Edit', 'zentile'));
                     ?>
                     </div>
                 </div>

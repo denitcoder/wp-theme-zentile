@@ -22,8 +22,8 @@ if (zentile_show_comments_list()) {
             ]);
 
             the_comments_pagination([
-                'prev_text' => __('Previous'),
-                'next_text' => __('Next'),
+                'prev_text' => __('Previous', 'zentile'),
+                'next_text' => __('Next', 'zentile'),
             ]);
         } else if ($comments_open) {
             echo '<div class="no-content">' . __('No comments yet', 'zentile') . '</div>';

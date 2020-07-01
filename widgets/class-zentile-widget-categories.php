@@ -2,10 +2,10 @@
 
 class Zentile_Widget_Categories extends WP_Widget {
     public function __construct() {
-        $widget_name = wp_get_theme() . ': ' . __('Categories');
+        $widget_name = wp_get_theme() . ': ' . __('Categories', 'zentile');
         $widget_ops = [
             'classname' => 'zentile_widget_categories',
-            'description' => __('A list or dropdown of categories.'),
+            'description' => __('A list or dropdown of categories.', 'zentile'),
             'customize_selective_refresh' => true,
         ];
 
@@ -14,7 +14,7 @@ class Zentile_Widget_Categories extends WP_Widget {
 
     public function widget($args, $instance) {
         $output = '';
-        $title = ! empty($instance['title']) ? $instance['title'] : __('Categories');
+        $title = ! empty($instance['title']) ? $instance['title'] : __('Categories', 'zentile');
         $title = apply_filters('widget_title', $title, $instance, $this->id_base);
         $show_count = ! empty($instance['count']);
         $depth = ! empty($instance['hierarchical']) ? 0 : -1;
@@ -35,7 +35,7 @@ class Zentile_Widget_Categories extends WP_Widget {
         $output .= '<ul class="menu">';
 
         $output .= '<li class="menu-item ' . (is_home() ? 'current-menu-item' : '') . '">';
-        $output .= '<a href="' . home_url('/') . '">';
+        $output .= '<a href="' . esc_url(home_url()) . '">';
         $output .= '<span class="category__name h-truncate">' . /* translators: All categories */ __('All', 'zentile') . '</span>';
 
         if ($show_count) {
@@ -64,14 +64,14 @@ class Zentile_Widget_Categories extends WP_Widget {
         $count        = isset($instance['count']) ? (bool) $instance['count'] : false;
         $hierarchical = isset($instance['hierarchical']) ? (bool) $instance['hierarchical'] : false;
         ?>
-        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'zentile'); ?></label>
         <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($instance['title']); ?>" /></p>
 
         <p><input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('count'); ?>" name="<?php echo $this->get_field_name('count'); ?>"<?php checked($count); ?> />
-        <label for="<?php echo $this->get_field_id('count'); ?>"><?php _e('Show post counts'); ?></label></p>
+        <label for="<?php echo $this->get_field_id('count'); ?>"><?php _e('Show post counts', 'zentile'); ?></label></p>
 
         <p><input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('hierarchical'); ?>" name="<?php echo $this->get_field_name('hierarchical'); ?>"<?php checked($hierarchical); ?> />
-        <label for="<?php echo $this->get_field_id('hierarchical'); ?>"><?php _e('Show hierarchy'); ?></label></p>
+        <label for="<?php echo $this->get_field_id('hierarchical'); ?>"><?php _e('Show hierarchy', 'zentile'); ?></label></p>
         <?php
     }
 }
