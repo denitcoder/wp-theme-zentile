@@ -43,6 +43,14 @@ msgstr "Страница не найдена"
 msgid "The page you were looking for could not be found. It might have been removed, renamed, or did not exist in the first place."
 msgstr "Страница не найдена. Возможно, она была удалена, переименована или никогда не существовала."
 
+#: comments.php:25
+msgid "Previous"
+msgstr "Назад"
+
+#: comments.php:26
+msgid "Next"
+msgstr "Далее"
+
 #: comments.php:29
 msgid "No comments yet"
 msgstr "Нет комментариев"
@@ -52,53 +60,94 @@ msgid "Comments are closed."
 msgstr "Комментарии закрыты."
 
 #. translators: %s number of posts
-#: components/archive-header.php:24
+#: components/archive-header.php:25
 msgid "%s post"
 msgid_plural "%s posts"
 msgstr[0] "%s пост"
 msgstr[1] "%s поста"
 msgstr[2] "%s постов"
 
+#: components/password-form.php:5
+msgid "This content is password protected. To view it please enter your password below:"
+msgstr "Это содержимое защищено паролем. Для его просмотра введите, пожалуйста, пароль:"
+
+#: components/password-form.php:6
+msgid "Password:"
+msgstr "Пароль:"
+
+#: components/password-form.php:7
+msgctxt "post password form"
+msgid "Enter"
+msgstr "Войти"
+
 #: components/post-list.php:14
 msgid "No posts yet"
 msgstr "Нет постов"
 
-#: components/post.php:60
+#: components/post.php:64
 msgid "Published by"
 msgstr "Автор публикации"
 
-#: components/sidebar.php:13
-#: functions.php:87
+#: components/sidebar.php:6
+msgid "Close navigation menu"
+msgstr "Закрыть главное меню"
+
+#: components/sidebar.php:13 functions.php:93
 msgid "Primary Menu"
 msgstr "Главное меню"
 
-#: footer.php:12
+#: footer.php:8
+msgid "Y"
+msgstr "Y"
+
+#: footer.php:14
 msgid "To the top"
 msgstr "Наверх"
 
-#: functions.php:106
+#. translators: 1: Theme name, 2: Theme author.
+#: footer.php:24
+msgid "Theme %1$s by %2$s"
+msgstr "Theme %1$s by %2$s"
+
+#: functions.php:113
 msgid "Sidebar"
 msgstr "Сайдбар"
 
-#: functions.php:107
+#: functions.php:114
 msgid "Widgets in this area will be displayed in the left sidebar."
 msgstr "Виджеты будут отображаться слева в сайдбаре"
 
-#: header.php:22
+#: header.php:16
 msgid "Skip to the content"
 msgstr "Перейти к содержимому"
 
-#: inc/class-zentile-customize.php:60
-msgid "Show featured image at the top of the post"
-msgstr "Показывать изображение-обложку в начале поста"
+#: header.php:34
+msgid "Open navigation menu"
+msgstr "Открыть главное меню"
+
+#: inc/class-zentile-customize.php:16
+msgid "Theme Options"
+msgstr "Настройки темы"
 
 #: inc/class-zentile-customize.php:39
 msgid "Show author bio at the end of the post"
 msgstr "Показывать информацию об авторе в конце поста"
 
 #: inc/class-zentile-customize.php:60
+msgid "Show featured image at the top of the post"
+msgstr "Показывать изображение-обложку в начале поста"
+
+#: inc/class-zentile-customize.php:81
 msgid "Always show sidebar"
 msgstr "Всегда показывать сайдбар"
+
+#: inc/class-zentile-walker-comment.php:27
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает одобрения."
+
+#: inc/class-zentile-walker-comment.php:43
+msgid "Edit"
+msgstr "Редактировать"
 
 #. translators: %s mins/hours/days ago
 #: inc/utils.php:5
@@ -123,10 +172,63 @@ msgctxt "Placeholder"
 msgid "Search"
 msgstr "Поиск"
 
+#: widgets/class-zentile-widget-categories.php:5
+#: widgets/class-zentile-widget-categories.php:17
+msgid "Categories"
+msgstr "Рубрики"
+
+#: widgets/class-zentile-widget-categories.php:8
+msgid "A list or dropdown of categories."
+msgstr "Список или выпадающее меню рубрик."
+
 #. translators: All categories
 #: widgets/class-zentile-widget-categories.php:39
 msgid "All"
 msgstr "Все"
+
+#: widgets/class-zentile-widget-categories.php:67
+#: widgets/class-zentile-widget-recent-comments.php:84
+#: widgets/class-zentile-widget-recent-posts.php:102
+msgid "Title"
+msgstr "Заголовок"
+
+#: widgets/class-zentile-widget-categories.php:71
+msgid "Show post counts"
+msgstr "Отображать число записей"
+
+#: widgets/class-zentile-widget-categories.php:74
+msgid "Show hierarchy"
+msgstr "Отображать иерархию"
+
+#: widgets/class-zentile-widget-recent-comments.php:5
+#: widgets/class-zentile-widget-recent-comments.php:17
+msgid "Recent Comments"
+msgstr "Последние комментарии"
+
+#: widgets/class-zentile-widget-recent-comments.php:8
+msgid "Your site&#8217;s most recent comments."
+msgstr "Самые свежие комментарии вашего сайта."
+
+#: widgets/class-zentile-widget-recent-comments.php:87
+msgid "Number of comments to show"
+msgstr "Количество комментариев"
+
+#: widgets/class-zentile-widget-recent-posts.php:5
+#: widgets/class-zentile-widget-recent-posts.php:20
+msgid "Recent Posts"
+msgstr "Последние записи"
+
+#: widgets/class-zentile-widget-recent-posts.php:8
+msgid "Your site&#8217;s most recent Posts."
+msgstr "Самые свежие записи вашего сайта."
+
+#: widgets/class-zentile-widget-recent-posts.php:58
+msgid "(no title)"
+msgstr "(без названия)"
+
+#: widgets/class-zentile-widget-recent-posts.php:105
+msgid "Number of posts to show"
+msgstr "Количество записей"
 
 #: widgets/class-zentile-widget-recent-posts.php:109
 msgid "Show post date"

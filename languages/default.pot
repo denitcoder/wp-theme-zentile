@@ -42,6 +42,14 @@ msgstr ""
 msgid "The page you were looking for could not be found. It might have been removed, renamed, or did not exist in the first place."
 msgstr ""
 
+#: comments.php:25
+msgid "Previous"
+msgstr ""
+
+#: comments.php:26
+msgid "Next"
+msgstr ""
+
 #: comments.php:29
 msgid "No comments yet"
 msgstr ""
@@ -51,11 +59,24 @@ msgid "Comments are closed."
 msgstr ""
 
 #. translators: %s number of posts
-#: components/archive-header.php:24
+#: components/archive-header.php:25
 msgid "%s post"
 msgid_plural "%s posts"
 msgstr[0] ""
 msgstr[1] ""
+
+#: components/password-form.php:5
+msgid "This content is password protected. To view it please enter your password below:"
+msgstr ""
+
+#: components/password-form.php:6
+msgid "Password:"
+msgstr ""
+
+#: components/password-form.php:7
+msgctxt "post password form"
+msgid "Enter"
+msgstr ""
 
 #: components/post-list.php:14
 msgid "No posts yet"
@@ -65,25 +86,46 @@ msgstr ""
 msgid "Published by"
 msgstr ""
 
+#: components/sidebar.php:6
+msgid "Close navigation menu"
+msgstr ""
+
 #: components/sidebar.php:13
-#: functions.php:89
+#: functions.php:93
 msgid "Primary Menu"
+msgstr ""
+
+#: footer.php:8
+msgid "Y"
 msgstr ""
 
 #: footer.php:14
 msgid "To the top"
 msgstr ""
 
-#: functions.php:109
+#. translators: 1: Theme name, 2: Theme author.
+#: footer.php:24
+msgid "Theme %1$s by %2$s"
+msgstr ""
+
+#: functions.php:113
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:110
+#: functions.php:114
 msgid "Widgets in this area will be displayed in the left sidebar."
 msgstr ""
 
-#: header.php:22
+#: header.php:16
 msgid "Skip to the content"
+msgstr ""
+
+#: header.php:34
+msgid "Open navigation menu"
+msgstr ""
+
+#: inc/class-zentile-customize.php:16
+msgid "Theme Options"
 msgstr ""
 
 #: inc/class-zentile-customize.php:39
@@ -96,6 +138,14 @@ msgstr ""
 
 #: inc/class-zentile-customize.php:81
 msgid "Always show sidebar"
+msgstr ""
+
+#: inc/class-zentile-walker-comment.php:27
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/class-zentile-walker-comment.php:43
+msgid "Edit"
 msgstr ""
 
 #. translators: %s mins/hours/days ago
@@ -120,9 +170,62 @@ msgctxt "Placeholder"
 msgid "Search"
 msgstr ""
 
+#: widgets/class-zentile-widget-categories.php:5
+#: widgets/class-zentile-widget-categories.php:17
+msgid "Categories"
+msgstr ""
+
+#: widgets/class-zentile-widget-categories.php:8
+msgid "A list or dropdown of categories."
+msgstr ""
+
 #. translators: All categories
 #: widgets/class-zentile-widget-categories.php:39
 msgid "All"
+msgstr ""
+
+#: widgets/class-zentile-widget-categories.php:67
+#: widgets/class-zentile-widget-recent-comments.php:84
+#: widgets/class-zentile-widget-recent-posts.php:102
+msgid "Title"
+msgstr ""
+
+#: widgets/class-zentile-widget-categories.php:71
+msgid "Show post counts"
+msgstr ""
+
+#: widgets/class-zentile-widget-categories.php:74
+msgid "Show hierarchy"
+msgstr ""
+
+#: widgets/class-zentile-widget-recent-comments.php:5
+#: widgets/class-zentile-widget-recent-comments.php:17
+msgid "Recent Comments"
+msgstr ""
+
+#: widgets/class-zentile-widget-recent-comments.php:8
+msgid "Your site&#8217;s most recent comments."
+msgstr ""
+
+#: widgets/class-zentile-widget-recent-comments.php:87
+msgid "Number of comments to show"
+msgstr ""
+
+#: widgets/class-zentile-widget-recent-posts.php:5
+#: widgets/class-zentile-widget-recent-posts.php:20
+msgid "Recent Posts"
+msgstr ""
+
+#: widgets/class-zentile-widget-recent-posts.php:8
+msgid "Your site&#8217;s most recent Posts."
+msgstr ""
+
+#: widgets/class-zentile-widget-recent-posts.php:58
+msgid "(no title)"
+msgstr ""
+
+#: widgets/class-zentile-widget-recent-posts.php:105
+msgid "Number of posts to show"
 msgstr ""
 
 #: widgets/class-zentile-widget-recent-posts.php:109
