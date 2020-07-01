@@ -17,9 +17,6 @@ input[type=search].search-form__input {
     margin: 0;
     height: 40px;
 }
-input[type=search].search-form__input:focus {
-    background-color: #f4f4f4;
-}
 
 .search-form__submit {
     display: none;

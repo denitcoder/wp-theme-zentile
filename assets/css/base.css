@@ -7,14 +7,28 @@ html {
     scroll-behavior: smooth;
 }
 
+body.focus-keyboard a.h-shadow-focus:focus,
+body.focus-keyboard :focus {
+    box-shadow: 0 0 0 var(--focus-width) var(--focus-color);
+    outline: none;
+}
+body.focus-keyboard a:not(.h-shadow-focus):focus {
+    box-shadow: none;
+    outline: var(--focus-width) solid var(--focus-color);
+}
+:focus {
+    outline: none;
+}
+::-moz-focus-inner {
+    border: 0;
+}
+
 a {
     color: #2143e8;
     text-decoration: none;
-    transition: background-color .2s, color .2s;
+    transition: background-color .2s, color .2s, box-shadow .2s;
 }
-
-a:hover,
-a:focus {
+a:hover {
     color: #142b9f;
     text-decoration: none;
 }

@@ -17,7 +17,7 @@
 
 .screen-reader-text:focus {
     background-color: #fff;
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 var(--focus-width) var(--focus-color);
     border-radius: 3px;
     clip: auto !important;
     -webkit-clip-path: none;
@@ -43,7 +43,7 @@
 	font-size: 14px;
 	text-decoration: none;
 	line-height: normal;
-	padding: 15px 20px;
+	padding: 10px 15px;
 	z-index: 100000;
 }
 

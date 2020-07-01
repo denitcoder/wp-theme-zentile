@@ -39,7 +39,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        z-index: 100;
+        z-index: 99999; /* Greater than the admin bar */
         background: rgba(0, 0, 0, 0.7);
         width: auto;
         margin: 0 !important;

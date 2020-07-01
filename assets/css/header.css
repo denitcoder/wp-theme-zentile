@@ -6,11 +6,29 @@
 
 /* Logo */
 .site-header__logo {
-    font: 400 25px 'Roboto Condensed', sans-serif;
     margin-right: 40px;
 }
 .site-header__logo img {
     display: block;
+}
+.site-header__logo a {
+    display: inline-block;
+}
+
+/* Text logo */
+body:not(.wp-custom-logo) .site-header__logo {
+    font: 400 25px 'Roboto Condensed', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+body:not(.wp-custom-logo) .site-header__logo a {
+    padding-top: 2px;
+    border-bottom: 2px solid transparent;
+}
+body:not(.wp-custom-logo) .site-header__logo a:focus {
+    box-shadow: none;
+    border-color: #f00;
 }
 
 /* Navigation */
@@ -28,21 +46,29 @@ body.single #site-header {
     padding-bottom: 70px;
 }
 
-
 #site-nav {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
+    margin-right: -8px;
+    padding: 3px 3px 3px 0;
+    overflow: hidden;
 }
 #site-nav ul {
     max-width: 700px;
-    overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     white-space: nowrap;
     font-size: 14px;
 }
 #site-nav ul li {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 20px;
+}
+#site-nav ul li a {
+    display: block;
+    padding: 1px 5px;
+    border-radius: 3px;
 }
 #site-nav ul li.current-menu-item a,
 #site-nav ul li.current_page_item a {
@@ -56,6 +82,8 @@ body.single #site-header {
     display: none;
     cursor: pointer;
     flex-shrink: 0;
+    border-radius: 3px;
+    margin-right: -4px;
 }
 .mobile-nav-toggle svg {
     fill: #000;

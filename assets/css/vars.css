@@ -10,6 +10,9 @@
 
     --dark-link: #000;
     --dark-link-hover: #f00;
+
+    --focus-width: 3px;
+    --focus-color: #fc0;
 }
 
 @custom-media --viewport-4 (width < 480px);

@@ -123,6 +123,9 @@
 .post__author__content {
     line-height: 1.7em;
 }
+.post__author__title a:focus {
+    outline: none;
+}
 
 /* post__password-form */
 .post__password-form {

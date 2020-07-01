@@ -23,13 +23,15 @@ textarea {
     color: #000;
     box-sizing: border-box;
     background: #eee;
+    transition: color .2s, background .2s, box-shadow .2s;
 }
 
 select:focus,
 textarea:focus,
-input:focus {
+input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):focus {
+    box-shadow: 0 0 0 var(--focus-width) var(--focus-color);
     outline: none;
-    background: #ddd;
+    background: #fff;
 }
 
 select {
