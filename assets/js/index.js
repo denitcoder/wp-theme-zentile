@@ -15,6 +15,18 @@ domReady(() => {
         }
     });
 
+    // Responsive iframes
+    document.querySelectorAll('iframe').forEach(iframe => {
+        if (!iframe.height || !iframe.width) return;
+        
+        const container = iframe.parentNode;
+
+        if (!container.classList.contains('wp-block-embed__wrapper')) return;
+    
+        container.classList.add('responsive-iframe');
+        container.style.paddingTop = `${iframe.height / iframe.width * 100}%`;
+    });
+
     // Mobile navigation
     const sidebar = document.querySelector('#site-sidebar');
 
