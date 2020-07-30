@@ -6,7 +6,7 @@ function zentile_human_time_diff($date) {
 }
 
 function zentile_human_time_diff_html($date) {
-    return '<time datetime="' . date('c', $date) . '" title="' . date('r', $date) . '">' . zentile_human_time_diff($date) . '</time>';
+    return '<time datetime="' . esc_attr(date('c', $date)) . '" title="' . esc_attr(date('r', $date)) . '">' . zentile_human_time_diff($date) . '</time>';
 }
 
 function zentile_show_comments_list() {

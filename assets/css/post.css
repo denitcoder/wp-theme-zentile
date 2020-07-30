@@ -124,7 +124,7 @@
     line-height: 1.7em;
 }
 .post__author__title a:focus {
-    outline: none;
+    outline: none !important;
 }
 
 /* post__password-form */

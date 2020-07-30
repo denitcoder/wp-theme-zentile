@@ -81,6 +81,8 @@ class Zentile_Widget_Recent_Posts extends WP_Widget {
         </ul>
 
         <?php
+        wp_reset_postdata();
+        
         echo $args['after_widget'];
     }
 

@@ -13,9 +13,18 @@ Zentile is a light-weight magazine theme made for blogging. The theme supports o
 
 == Resources ==
 
-Illustrations in screenshot.png by Unsplash
-License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
-Source: https://unsplash.com/
+Images for theme screenshot, Copyright Kristin Hardwick
+License: CC0 1.0 Universal (CC0 1.0)
+Source: https://stocksnap.io/photo/DC7JUJKYTQ
+Source: https://stocksnap.io/photo/BKMGNPCJ9Y
+Source: https://stocksnap.io/photo/Q1KHHDXXZT
+Source: https://stocksnap.io/photo/KSLK5TYFZI
+
+Images for theme screenshot, Copyright Bernard Spragg
+License: CC0 1.0 Universal (CC0 1.0)
+Source: https://stocksnap.io/photo/AAFEL0IIKV
+Source: https://stocksnap.io/photo/NGWA6GGQNM
+Source: https://stocksnap.io/photo/OULQDJGGLA
 
 medium-zoom by francoischalifour
 License: MIT

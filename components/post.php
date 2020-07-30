@@ -31,7 +31,7 @@
         if (post_password_required()) {
             zentile_cmp_password_form();
         } else { ?>
-            <?php if (get_theme_mod('show_featured_image', false)) { ?>
+            <?php if (get_theme_mod('show_featured_image', false) && has_post_thumbnail()) { ?>
                 <img src="<?php the_post_thumbnail_url('zentile-thumbnail-post') ?>" alt="<?php echo esc_attr(get_the_title()) ?>" class="post__featured-image">
             <?php } ?>
 
