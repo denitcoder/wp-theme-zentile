@@ -13,12 +13,18 @@
 
             <div class="post__meta">
                 <?php
-                // Date
-                echo '<span class="post__date">' . the_time(get_option('date_format')) . '</span>';
 
-                // Category
-                if (has_category()) {
-                    echo '<span class="post__category">' . get_the_category_list(', ') . '</span>';
+                /**
+                 * Only show the dates and categories on posts, not pages.
+                 */
+                if (is_singular('post')) {
+                    // Date
+                    echo '<span class="post__date">' . the_time(get_option('date_format')) . '</span>';
+
+                    // Category
+                    if (has_category()) {
+                        echo '<span class="post__category">' . get_the_category_list(', ') . '</span>';
+                    }
                 }
 
                 // Edit link
