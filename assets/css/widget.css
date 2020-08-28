@@ -54,8 +54,8 @@
 .menu li.current-menu-item > a .category__count {
     opacity: .6;
 }
-.menu .sub-menu {
-    margin-left: 20px;
+.menu ul {
+    margin-left: 15px;
 }
 
 /* Tag Cloud */

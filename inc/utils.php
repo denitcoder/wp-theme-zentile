@@ -24,14 +24,14 @@ function zentile_show_primary_nav() {
 function zentile_primary_nav() {
     if (has_nav_menu('primary')) {
         wp_nav_menu([
-            'depth' => 1,
+            'depth' => 0,
             'container' => '',
             'items_wrap' => '%3$s',
             'theme_location' => 'primary',
         ]);
     } else {
         wp_list_pages([
-            'depth' => 1,
+            'depth' => 0,
             'title_li' => false,
         ]);
     }

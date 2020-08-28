@@ -9,7 +9,7 @@ Theme URI: https://github.com/denitcoder/wp-theme-zentile
 License: GPL-2.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Zentile is a light-weight magazine theme made for blogging. The theme supports only one-level primary menu.
+Zentile is a light-weight magazine theme made for blogging.
 
 == Resources ==
 

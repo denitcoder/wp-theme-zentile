@@ -1,4 +1,5 @@
 import mediumZoom from "medium-zoom";
+import { Dropdown } from "./dropdown";
 import { OffCanvas } from "./off-canvas";
 import { domReady } from "./utils";
 
@@ -33,4 +34,7 @@ domReady(() => {
     if (sidebar) {
         new OffCanvas(sidebar);
     }
+
+    // Dropdown menu
+    document.querySelectorAll('.primary-menu li').forEach(element => new Dropdown(element));
 });
