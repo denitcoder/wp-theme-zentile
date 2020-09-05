@@ -57,6 +57,12 @@
 .menu ul {
     margin-left: 15px;
 }
+.menu--primary a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 /* Tag Cloud */
 .tagcloud {

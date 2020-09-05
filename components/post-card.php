@@ -8,13 +8,11 @@ function zentile_cmp_post_card() {
         <a href="<?php echo esc_url(get_permalink()) ?>" class="post-card__link" tabindex="-1"><?php the_title() ?></a>
 
         <?php if ($is_sticky) {
-            echo '<div class="post-card__sticky post-card__ribbon"></div>';
-            echo '<div class="post-card__sticky-icon">' . zentile_get_theme_svg('bookmark') . '</div>';
+            echo '<div class="post-card__sticky post-card__ribbon">' . zentile_get_theme_svg('bookmark') . '</div>';
         } ?>
 
         <?php if (post_password_required()) {
-            echo '<div class="post-card__protected post-card__ribbon"></div>';
-            echo '<div class="post-card__protected-icon">' . zentile_get_theme_svg('lock') . '</div>';
+            echo '<div class="post-card__protected post-card__ribbon">' . zentile_get_theme_svg('lock') . '</div>';
         } ?>
 
         <div class="post-card__body">

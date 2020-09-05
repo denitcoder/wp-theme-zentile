@@ -12,7 +12,7 @@ function zentile_cmp_sidebar() { ?>
                     <div class="widget-content">
                         <h2 class="widget-title"><?php _e('Primary Menu', 'zentile'); ?></h2>
 
-                        <ul class="menu">
+                        <ul class="menu menu--primary">
                             <?php zentile_primary_nav(); ?>
                         </ul>
                     </div>
