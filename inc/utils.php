@@ -21,6 +21,21 @@ function zentile_show_primary_nav() {
     return has_nav_menu('primary') || get_pages();
 }
 
+function zentile_get_post_bg_color() {
+    $dominant = get_the_terms(get_post_thumbnail_id(), 'cpg_dominant_color');
+    $color = is_array($dominant) ? $dominant[0]->name : '#151515';
+    list($r, $g, $b) = sscanf($color, '#%02x%02x%02x');
+
+    // Calculates perceived lightness using the sRGB Luma method
+    // Luma = (red * 0.2126 + green * 0.7152 + blue * 0.0722) / 255
+    $perceived_lightness = ($r * 0.2126 + $g * 0.7152 + $b * 0.0722) / 255;
+
+    return [
+        'color' => $color,
+        'is_bright' => $perceived_lightness > 0.5
+    ];
+}
+
 function zentile_primary_nav() {
     if (has_nav_menu('primary')) {
         wp_nav_menu([

@@ -2,8 +2,6 @@
     --post-card-margin: 4px;
     --post-card-title-max-lines: 4;
     --post-card-title-lh: 25px;
-    --post-vgrad: linear-gradient(to top, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 1) 80px,rgba(20, 20, 20, 0) 80%);
-    --post-hgrad: linear-gradient(to right, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 1) 200px,rgba(20, 20, 20, 0) 80%);
 }
 
 .post-list {
@@ -59,6 +57,9 @@
 
 
 .post-card {
+    --post-vgrad: linear-gradient(to top, var(--post-color) 80px, transparent 80%);
+    --post-hgrad: linear-gradient(to right, var(--post-color) 200px, transparent 80%);
+    
     position: relative;
     width: calc(100% / 3 - var(--post-card-margin) * 2);
     height: 320px;
@@ -169,11 +170,6 @@
     margin-right: -3px;
     transform: rotate(45deg);
 }
-.post-card:not(.--has-comments) .post-card__comments,
-.post-card:not(.--has-comments) .post-card__comments:after {
-    background: #555;
-    color: #aaa;
-}
 
 .post-card__ribbon {
     width: 60px;
@@ -198,4 +194,20 @@
     right: 0;
     left: auto;
     text-align: right;
+}
+
+/* Bright Background */
+.post-card.--bright .post-card__title a {
+    color: #000;
+}
+.post-card.--bright .post-card__categories,
+.post-card.--bright .post-card__categories a {
+    color: rgba(0, 0, 0, 0.7);
+}
+.post-card.--bright .post-card__body {
+    color: rgba(0, 0, 0, 0.4);
+}
+.post-card.--bright .post-card__comments {
+    --post-comments-bg: #222;
+    color: #eee;
 }

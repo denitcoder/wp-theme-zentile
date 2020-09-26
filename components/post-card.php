@@ -2,9 +2,10 @@
 
 function zentile_cmp_post_card() {
     $is_sticky = is_home() && is_sticky();
-    $has_comments = get_comments_number() > 0; ?>
+    $has_comments = get_comments_number() > 0;
+    $post_bg_color = zentile_get_post_bg_color(); ?>
 
-    <article class="post-card <?php if ($is_sticky) echo '--sticky' ?> <?php if ($has_comments) echo '--has-comments' ?>">
+    <article class="post-card <?php if ($is_sticky) echo '--sticky' ?> <?php if ($post_bg_color['is_bright']) echo '--bright' ?> <?php if ($has_comments) echo '--has-comments' ?>" style="--post-color: <?php echo $post_bg_color['color'] ?>">
         <a href="<?php echo esc_url(get_permalink()) ?>" class="post-card__link" tabindex="-1"><?php the_title() ?></a>
 
         <?php if ($is_sticky) {
@@ -37,6 +38,6 @@ function zentile_cmp_post_card() {
             ?>
         </div>
 
-        <div class="post-card__bg" style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
+        <div class="post-card__bg" style="background-color: <?php echo $post_bg_color['color'] ?>; background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
     </article>
 <?php }

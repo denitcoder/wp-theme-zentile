@@ -47,6 +47,19 @@ Zentile is a lightweight magazine theme inspired by Yandex.Zen.
 - Go to **Appearance > Widgets** and add widgets **Zentile: Categories**, **Zentile: Recent Comments** and **Zentile: Recent Posts**.
 - Go to **Appearance > Customize** and customize theme as you need.
 
+## Use the dominant color in the posts gradients
+
+If you want the post card's gradients to match its featured image dominant color, follow the steps below:
+
+- Install and activate plugin [Color Palette Generator](https://wordpress.org/plugins/color-palette-generator/).
+- Go to **Media > Color Palette Generator** and set:
+    - **Number of colors to generate**: 1
+    - **Automatically generate palettes on upload?**: checked
+- Click **Save Changes**.
+- Click **Generate**.
+
+**Notice:** The plugin automatically generate palettes for the images only if you upload them via the **Media > Add New** page, otherwise you need to generate it manually.
+
 ## Development
 
 **Requirements:** Node.js >= 12.x, Git
