@@ -15,7 +15,7 @@ function zentile_cmp_archive_header($title, $desc, $avatar = null) { ?>
         <div class="archive-header__body">
             <?php if ($title) { ?>
                 <h1 class="archive-header__title h-break-word">
-                    <?php echo esc_html($title); ?>
+                    <?php echo wp_kses_post($title); ?>
                 </h1>
 
                 <div class="archive-header__count">
