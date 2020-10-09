@@ -1,7 +1,7 @@
 === Zentile ===
 Contributors: denitcoder
 Version: 1.3.2
-Tested up to: 5.4
+Tested up to: 5.5.1
 Requires at least: 5.3
 Requires PHP: 5.6
 Author URI: https://github.com/denitcoder
