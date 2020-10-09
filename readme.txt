@@ -1,6 +1,6 @@
 === Zentile ===
 Contributors: denitcoder
-Version: 1.3.2
+Version: 1.4
 Tested up to: 5.5.1
 Requires at least: 5.3
 Requires PHP: 5.6
