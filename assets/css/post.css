@@ -117,10 +117,8 @@
 .post__author__by {
     color: #aaa;
 }
-.post__author__title {
-    margin-bottom: 15px;
-}
 .post__author__content {
+    margin-top: 15px;
     line-height: 1.7em;
 }
 .post__author__title a:focus {

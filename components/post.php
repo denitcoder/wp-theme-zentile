@@ -1,6 +1,6 @@
 <?php function zentile_cmp_post() {
     the_post(); ?>
-    
+
     <article <?php post_class([ get_comments_number() > 0 ? '--has-comments': null, 'post' ]); ?>>
         <header class="post__header">
             <?php
@@ -60,7 +60,7 @@
             // Author
             $author_desc = get_the_author_meta('description');
 
-            if (is_single() && (bool) $author_desc && (bool) get_theme_mod('show_author_bio', true)) { ?>
+            if (is_single() && (bool) get_theme_mod('show_author_bio', true)) { ?>
                 <div class="post__author">
                     <div class="post__author__header">
                         <?php echo get_avatar(get_the_author_meta('ID'), 80); ?>
