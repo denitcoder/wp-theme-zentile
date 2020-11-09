@@ -81,6 +81,27 @@ class Zentile_Customize {
                 'label'    => __('Always show sidebar', 'zentile'),
             ]
         );
+
+        /* Show post navigation ---------------------------------------------------- */
+
+        $wp_customize->add_setting(
+            'show_post_nav',
+            [
+                'capability'        => 'edit_theme_options',
+                'default'           => true,
+                'sanitize_callback' => [ __CLASS__, 'sanitize_checkbox' ],
+            ]
+        );
+
+        $wp_customize->add_control(
+            'show_post_nav',
+            [
+                'type'     => 'checkbox',
+                'section'  => 'options',
+                'priority' => 10,
+                'label'    => __('Show post navigation', 'zentile'),
+            ]
+        );
     }
 
     public static function sanitize_checkbox($checked) {

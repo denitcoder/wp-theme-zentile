@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Zentile 1.2\n"
+"Project-Id-Version: Zentile 1.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zentile\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-05-16T01:03:30+00:00\n"
+"POT-Creation-Date: 2020-11-09T00:00:00+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: zentile\n"
@@ -23,7 +23,7 @@ msgid "https://github.com/denitcoder/wp-theme-zentile"
 msgstr ""
 
 #. Description of the theme
-msgid "Zentile is a light-weight magazine theme inspired by Yandex.Zen"
+msgid "Zentile is a light-weight magazine theme inspired by Yandex.Zen. Demo: https://wpshowcase.site, Documentation: https://github.com/denitcoder/wp-theme-zentile#readme"
 msgstr ""
 
 #. Author of the theme
@@ -59,7 +59,7 @@ msgid "Comments are closed."
 msgstr ""
 
 #. translators: %s number of posts
-#: components/archive-header.php:25
+#: components/archive-header.php:24
 msgid "%s post"
 msgid_plural "%s posts"
 msgstr[0] ""
@@ -82,7 +82,7 @@ msgstr ""
 msgid "No posts yet"
 msgstr ""
 
-#: components/post.php:64
+#: components/post.php:70
 msgid "Published by"
 msgstr ""
 
@@ -140,6 +140,10 @@ msgstr ""
 msgid "Always show sidebar"
 msgstr ""
 
+#: inc/class-zentile-customize.php:102
+msgid "Show post navigation"
+msgstr ""
+
 #: inc/class-zentile-walker-comment.php:27
 msgid "Your comment is awaiting moderation."
 msgstr ""
@@ -186,7 +190,7 @@ msgstr ""
 
 #: widgets/class-zentile-widget-categories.php:67
 #: widgets/class-zentile-widget-recent-comments.php:84
-#: widgets/class-zentile-widget-recent-posts.php:102
+#: widgets/class-zentile-widget-recent-posts.php:105
 msgid "Title"
 msgstr ""
 
@@ -224,14 +228,14 @@ msgstr ""
 msgid "(no title)"
 msgstr ""
 
-#: widgets/class-zentile-widget-recent-posts.php:105
+#: widgets/class-zentile-widget-recent-posts.php:108
 msgid "Number of posts to show"
 msgstr ""
 
-#: widgets/class-zentile-widget-recent-posts.php:109
+#: widgets/class-zentile-widget-recent-posts.php:112
 msgid "Show post date"
 msgstr ""
 
-#: widgets/class-zentile-widget-recent-posts.php:112
+#: widgets/class-zentile-widget-recent-posts.php:115
 msgid "Show featured image"
 msgstr ""

@@ -1,7 +1,7 @@
 <?php
 
 $zentile_svg_icons = [
-    'arrow-up' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+    'arrow-up' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="currentColor">
         <path d="M14.83 30.83l9.17-9.17 9.17 9.17 2.83-2.83-12-12-12 12z"/>
         </svg>',
     'bookmark' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 18">

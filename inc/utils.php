@@ -21,8 +21,8 @@ function zentile_show_primary_nav() {
     return has_nav_menu('primary') || get_pages();
 }
 
-function zentile_get_post_bg_color() {
-    $dominant = get_the_terms(get_post_thumbnail_id(), 'cpg_dominant_color');
+function zentile_get_post_bg_color($post = null) {
+    $dominant = get_the_terms(get_post_thumbnail_id($post), 'cpg_dominant_color');
     $color = is_array($dominant) ? $dominant[0]->name : '#151515';
     list($r, $g, $b) = sscanf($color, '#%02x%02x%02x');
 
