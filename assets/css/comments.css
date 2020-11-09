@@ -53,7 +53,7 @@
     word-break: break-word;
     color: #555;
 }
-.comment.bypostauthor .comment__user {
+.comment.bypostauthor > .comment-body .comment__user {
     background: #c6e226;
     border-radius: 3px;
     padding: 0 5px;
