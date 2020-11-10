@@ -19,87 +19,61 @@ class Zentile_Customize {
             ]
         );
 
-        /* Show author bio ---------------------------------------------------- */
+        self::checkbox($wp_customize, 'show_author_bio', true, __('Show author bio at the end of the post', 'zentile'));
+        self::checkbox($wp_customize, 'show_featured_image', false, __('Show featured image at the top of the post', 'zentile'));
+        self::checkbox($wp_customize, 'always_show_sidebar', false, __('Always show sidebar', 'zentile'));
+        self::checkbox($wp_customize, 'show_post_nav', true, __('Show post navigation', 'zentile'));
 
+        self::checkbox($wp_customize, 'show_related_posts_before_comments', true, __('Show related posts BEFORE comments', 'zentile'));
+        self::number($wp_customize, 'related_posts_before_comments_num', 4, 0, 16, __('Number of related posts BEFORE comments', 'zentile'));
+
+        self::checkbox($wp_customize, 'show_related_posts_after_comments', false, __('Show related posts AFTER comments', 'zentile'));
+        self::number($wp_customize, 'related_posts_after_comments_num', 5, 0, 100,  __('Number of related posts AFTER comments', 'zentile'));
+    }
+
+    private static function checkbox($wp_customize, $setting_id, $default, $text) {
         $wp_customize->add_setting(
-            'show_author_bio',
+            $setting_id,
             [
                 'capability'        => 'edit_theme_options',
-                'default'           => true,
+                'default'           => $default,
                 'sanitize_callback' => [ __CLASS__, 'sanitize_checkbox' ],
             ]
         );
 
         $wp_customize->add_control(
-            'show_author_bio',
+            $setting_id,
             [
                 'type'     => 'checkbox',
                 'section'  => 'options',
                 'priority' => 10,
-                'label'    => __('Show author bio at the end of the post', 'zentile'),
+                'label'    => $text,
             ]
         );
+    }
 
-        /* Show featured image ---------------------------------------------------- */
-
+    private static function number($wp_customize, $setting_id, $default, $min, $max, $text) {
         $wp_customize->add_setting(
-            'show_featured_image',
+            $setting_id,
             [
                 'capability'        => 'edit_theme_options',
-                'default'           => false,
-                'sanitize_callback' => [ __CLASS__, 'sanitize_checkbox' ],
+                'default'           => $default,
+                'sanitize_callback' => 'absint',
             ]
         );
 
         $wp_customize->add_control(
-            'show_featured_image',
+            $setting_id,
             [
-                'type'     => 'checkbox',
+                'type'     => 'number',
                 'section'  => 'options',
                 'priority' => 10,
-                'label'    => __('Show featured image at the top of the post', 'zentile'),
-            ]
-        );
-
-        /* Always show sidebar ---------------------------------------------------- */
-
-        $wp_customize->add_setting(
-            'always_show_sidebar',
-            [
-                'capability'        => 'edit_theme_options',
-                'default'           => false,
-                'sanitize_callback' => [ __CLASS__, 'sanitize_checkbox' ],
-            ]
-        );
-
-        $wp_customize->add_control(
-            'always_show_sidebar',
-            [
-                'type'     => 'checkbox',
-                'section'  => 'options',
-                'priority' => 10,
-                'label'    => __('Always show sidebar', 'zentile'),
-            ]
-        );
-
-        /* Show post navigation ---------------------------------------------------- */
-
-        $wp_customize->add_setting(
-            'show_post_nav',
-            [
-                'capability'        => 'edit_theme_options',
-                'default'           => true,
-                'sanitize_callback' => [ __CLASS__, 'sanitize_checkbox' ],
-            ]
-        );
-
-        $wp_customize->add_control(
-            'show_post_nav',
-            [
-                'type'     => 'checkbox',
-                'section'  => 'options',
-                'priority' => 10,
-                'label'    => __('Show post navigation', 'zentile'),
+                'label'    => $text,
+                'input_attrs' => [
+                    'min' => $min,
+                    'max' => $max,
+                    'step' => 1,
+                ]
             ]
         );
     }

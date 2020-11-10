@@ -18,6 +18,8 @@ require get_template_directory() . '/components/alert.php';
 require get_template_directory() . '/components/post.php';
 require get_template_directory() . '/components/post-card.php';
 require get_template_directory() . '/components/post-list.php';
+require get_template_directory() . '/components/post-nav.php';
+require get_template_directory() . '/components/related-posts.php';
 require get_template_directory() . '/components/password-form.php';
 require get_template_directory() . '/components/logo.php';
 require get_template_directory() . '/components/sidebar.php';
@@ -27,11 +29,11 @@ require get_template_directory() . '/components/sidebar.php';
  */
 function zentile_theme_support() {
     global $content_width;
-    
+
 	if (!isset($content_width)) {
 		$content_width = 700;
     }
-    
+
     add_theme_support('custom-logo', [
         'width'       => 150,
         'height'      => 40,
@@ -103,7 +105,7 @@ function zentile_sidebar_registration() {
     register_widget('Zentile_Widget_Categories');
     register_widget('Zentile_Widget_Recent_Comments');
     register_widget('Zentile_Widget_Recent_Posts');
-    
+
     register_sidebar([
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',

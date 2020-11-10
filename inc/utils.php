@@ -9,8 +9,8 @@ function zentile_human_time_diff_html($date) {
     return '<time datetime="' . esc_attr(date('c', $date)) . '" title="' . esc_attr(date('r', $date)) . '">' . zentile_human_time_diff($date) . '</time>';
 }
 
-function zentile_show_comments_list() {
-    return comments_open() || (!comments_open() && absint(get_comments_number()));
+function zentile_show_comments_list($post_id = null) {
+    return comments_open($post_id) || (!comments_open($post_id) && absint(get_comments_number($post_id)));
 }
 
 function zentile_show_sidebar() {
@@ -50,4 +50,19 @@ function zentile_primary_nav() {
             'title_li' => false,
         ]);
     }
+}
+
+function zentile_get_related_posts($post, $count) {
+    $categories = get_the_category($post->ID);
+    $ids = wp_list_pluck($categories, 'term_id');
+    $related_args = [
+        'post_type' => 'post',
+        'posts_per_page' => $count,
+        'post_status' => 'publish',
+        'post__not_in' => [ $post->ID ],
+        'category__in' => $ids,
+        'orderby' => 'rand'
+    ];
+
+    return (new WP_Query($related_args))->posts;
 }

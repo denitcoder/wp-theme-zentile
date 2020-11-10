@@ -1,0 +1,38 @@
+.related-posts {
+    margin-top: 50px;
+}
+.related-posts__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Fancy heading */
+.related-posts--default .related-posts__title {
+    text-align: center;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.related-posts--default .related-posts__title span {
+    position: relative;
+}
+.related-posts--default .related-posts__title span::before,
+.related-posts--default .related-posts__title span::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid rgba(0, 0, 0, .15);
+    top: calc(50% + 1px);
+}
+.related-posts--default .related-posts__title span::before {
+    left: -9999px;
+    right: calc(100% + 15px);
+}
+.related-posts--default .related-posts__title span::after {
+    left: calc(100% + 15px);
+    right: -9999px;
+}
+
+@media (--viewport-5) {
+    .related-posts__title {
+        font-size: 20px;
+    }
+}

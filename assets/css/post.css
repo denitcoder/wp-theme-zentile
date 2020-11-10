@@ -125,77 +125,6 @@
     outline: none !important;
 }
 
-/* Post navigation (next/prev) */
-.post__nav {
-    --gap: 30px;
-
-    display: flex;
-    margin-top: 50px;
-}
-
-.post__nav-item {
-    --post-nav-dir: to right;
-
-    width: calc(50% - var(--gap) / 2);
-    display: grid;
-    grid-template-columns: auto 30px;
-    gap: 10px;
-
-    background-image: linear-gradient(var(--post-nav-dir), var(--post-nav-color) 30%, transparent 100%), var(--post-nav-image);
-    background-color: var(--post-nav-color);
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-
-    padding: 17px 10px 17px 20px;
-    font-size: 13px;
-    line-height: 20px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-.post__nav-item span {
-    align-self: center;
-    word-break: break-word;
-}
-.post__nav-item svg {
-    align-self: center;
-    transform: rotate(90deg);
-}
-.post__nav-item.post__nav-item--bright {
-    color: #000000;
-}
-
-.post__nav-item:hover {
-    color: #fff;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
-}
-.post__nav-item.post__nav-item--bright:hover {
-    color: #000;
-}
-.post__nav-item:active {
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-}
-
-.post__nav-item.post__nav-item--newer {
-    --post-nav-dir: to left;
-
-    grid-template-columns: 30px auto;
-    padding: 17px 20px 17px 10px;
-    margin-right: var(--gap);
-}
-.post__nav-item.post__nav-item--newer svg {
-    order: 1;
-    transform: rotate(-90deg);
-}
-.post__nav-item.post__nav-item--newer span {
-    order: 2;
-}
-
-.post__nav-item.post__nav-item--older {
-    margin-left: auto;
-}
-
 /* post__password-form */
 .post__password-form {
     margin-top: 50px;
@@ -212,18 +141,6 @@
     }
     .post__content.typeset {
         font-size: 15px;
-    }
-}
-@media (--viewport-6) {
-    .post__nav {
-        flex-direction: column;
-    }
-    .post__nav-item {
-        width: 100%;
-        margin: 0 !important;
-    }
-    .post__nav-item.post__nav-item--older:not(:first-child) {
-        margin: 10px 0 0 !important;
     }
 }
 @media (--viewport-9) {

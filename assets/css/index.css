@@ -10,6 +10,8 @@
 @import 'typeset.css';
 @import 'post.css';
 @import 'post-card.css';
+@import 'post-nav.css';
+@import 'related-posts.css';
 @import 'button.css';
 @import 'search-form.css';
 @import '404.css';
