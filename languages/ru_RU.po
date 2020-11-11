@@ -88,11 +88,15 @@ msgstr "Нет постов"
 msgid "Published by"
 msgstr "Автор публикации"
 
+#: components/related-posts.php:9
+msgid "Related posts"
+msgstr "Похожие посты"
+
 #: components/sidebar.php:6
 msgid "Close navigation menu"
 msgstr "Закрыть главное меню"
 
-#: components/sidebar.php:13 functions.php:93
+#: components/sidebar.php:13 functions.php:95
 msgid "Primary Menu"
 msgstr "Главное меню"
 
@@ -109,11 +113,11 @@ msgstr "Наверх"
 msgid "Theme %1$s by %2$s"
 msgstr "Theme %1$s by %2$s"
 
-#: functions.php:113
+#: functions.php:115
 msgid "Sidebar"
 msgstr "Сайдбар"
 
-#: functions.php:114
+#: functions.php:116
 msgid "Widgets in this area will be displayed in the left sidebar."
 msgstr "Виджеты будут отображаться слева в сайдбаре"
 
@@ -129,21 +133,37 @@ msgstr "Открыть главное меню"
 msgid "Theme Options"
 msgstr "Настройки темы"
 
-#: inc/class-zentile-customize.php:39
+#: inc/class-zentile-customize.php:22
 msgid "Show author bio at the end of the post"
 msgstr "Показывать информацию об авторе в конце поста"
 
-#: inc/class-zentile-customize.php:60
+#: inc/class-zentile-customize.php:23
 msgid "Show featured image at the top of the post"
 msgstr "Показывать изображение-обложку в начале поста"
 
-#: inc/class-zentile-customize.php:81
+#: inc/class-zentile-customize.php:24
 msgid "Always show sidebar"
 msgstr "Всегда показывать сайдбар"
 
-#: inc/class-zentile-customize.php:102
+#: inc/class-zentile-customize.php:25
 msgid "Show post navigation"
 msgstr "Показывать навигацию по постам"
+
+#: inc/class-zentile-customize.php:27
+msgid "Show related posts BEFORE comments"
+msgstr "Показывать похожие посты ПЕРЕД комментариями"
+
+#: inc/class-zentile-customize.php:28
+msgid "Number of related posts BEFORE comments"
+msgstr "Кол-во похожих постов ПЕРЕД комментариями"
+
+#: inc/class-zentile-customize.php:30
+msgid "Show related posts AFTER comments"
+msgstr "Показывать похожие посты ПОСЛЕ комментариев"
+
+#: inc/class-zentile-customize.php:31
+msgid "Number of related posts AFTER comments"
+msgstr "Кол-во похожих постов ПОСЛЕ комментариев"
 
 #: inc/class-zentile-walker-comment.php:27
 msgid "Your comment is awaiting moderation."

@@ -86,12 +86,16 @@ msgstr ""
 msgid "Published by"
 msgstr ""
 
+#: components/related-posts.php:9
+msgid "Related posts"
+msgstr ""
+
 #: components/sidebar.php:6
 msgid "Close navigation menu"
 msgstr ""
 
 #: components/sidebar.php:13
-#: functions.php:93
+#: functions.php:95
 msgid "Primary Menu"
 msgstr ""
 
@@ -108,11 +112,11 @@ msgstr ""
 msgid "Theme %1$s by %2$s"
 msgstr ""
 
-#: functions.php:113
+#: functions.php:115
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:114
+#: functions.php:116
 msgid "Widgets in this area will be displayed in the left sidebar."
 msgstr ""
 
@@ -128,20 +132,36 @@ msgstr ""
 msgid "Theme Options"
 msgstr ""
 
-#: inc/class-zentile-customize.php:39
+#: inc/class-zentile-customize.php:22
 msgid "Show author bio at the end of the post"
 msgstr ""
 
-#: inc/class-zentile-customize.php:60
+#: inc/class-zentile-customize.php:23
 msgid "Show featured image at the top of the post"
 msgstr ""
 
-#: inc/class-zentile-customize.php:81
+#: inc/class-zentile-customize.php:24
 msgid "Always show sidebar"
 msgstr ""
 
-#: inc/class-zentile-customize.php:102
+#: inc/class-zentile-customize.php:25
 msgid "Show post navigation"
+msgstr ""
+
+#: inc/class-zentile-customize.php:27
+msgid "Show related posts BEFORE comments"
+msgstr ""
+
+#: inc/class-zentile-customize.php:28
+msgid "Number of related posts BEFORE comments"
+msgstr ""
+
+#: inc/class-zentile-customize.php:30
+msgid "Show related posts AFTER comments"
+msgstr ""
+
+#: inc/class-zentile-customize.php:31
+msgid "Number of related posts AFTER comments"
 msgstr ""
 
 #: inc/class-zentile-walker-comment.php:27
