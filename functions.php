@@ -31,7 +31,7 @@ function zentile_theme_support() {
     global $content_width;
 
 	if (!isset($content_width)) {
-		$content_width = 700;
+		$content_width = 800;
     }
 
     add_theme_support('custom-logo', [

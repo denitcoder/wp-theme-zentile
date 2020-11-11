@@ -12,7 +12,7 @@ if (is_singular('post') && get_theme_mod('show_post_nav', true)) {
 
 // Related posts (small grid)
 if (is_singular('post') && !post_password_required() && get_theme_mod('show_related_posts_before_comments', true)) {
-    zentile_cmp_post_related(get_post(), get_theme_mod('related_posts_before_comments_num', 5), '', 'post-list-small', 'post-card--small');
+    zentile_cmp_post_related(get_post(), get_theme_mod('related_posts_before_comments_num', 4), '', 'post-list-small', 'post-card--small');
 }
 
 // Comments

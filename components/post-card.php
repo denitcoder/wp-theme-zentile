@@ -12,7 +12,7 @@ function zentile_cmp_post_card($post = null, $classes = []) {
     ?>
 
     <article class="post-card <?php echo implode(' ', $classes) ?>" style="--post-color: <?php echo $post_bg_color['color'] ?>">
-        <a href="<?php echo esc_url(get_permalink($post_id)) ?>" class="post-card__link" tabindex="-1"><?php the_title($post_id) ?></a>
+        <a href="<?php echo esc_url(get_permalink($post_id)) ?>" class="post-card__link" tabindex="-1"><?php echo get_the_title($post_id) ?></a>
 
         <?php if ($is_sticky) {
             echo '<div class="post-card__sticky post-card__ribbon">' . zentile_get_theme_svg('bookmark') . '</div>';

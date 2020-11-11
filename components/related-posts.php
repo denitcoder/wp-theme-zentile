@@ -6,7 +6,7 @@ function zentile_cmp_post_related($post, $count, $classes, $list_classes, $card_
     if (count($related_posts) == 0) return;
 
     echo '<div class="related-posts ' . $classes . '">';
-    echo '<h2 class="related-posts__title"><span>' . __('You might like', 'zentile') . '</span></h2>';
+    echo '<h2 class="related-posts__title"><span>' . __('Related posts', 'zentile') . '</span></h2>';
     echo '<div class="' . $list_classes . '">';
 
     foreach ($related_posts as $post) {
