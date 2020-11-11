@@ -24,7 +24,7 @@ function zentile_cmp_post_card($post = null, $classes = []) {
 
         <div class="post-card__body">
             <?php
-            the_title('<h2 class="post-card__title"><a href="' . esc_url(get_permalink($post_id)) . '">', '</a></h2>');
+            echo '<h2 class="post-card__title"><a href="' . esc_url(get_permalink($post_id)) . '">' . get_the_title($post_id) . '</a></h2>';
 
             if (has_category('', $post_id)) {
                 echo '<div class="post-card__categories h-truncate">' . get_the_category_list(', ', '', $post_id) . '</div>';
