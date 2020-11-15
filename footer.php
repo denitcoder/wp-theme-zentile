@@ -1,7 +1,13 @@
                 </main>
-                
+
                 <?php zentile_cmp_sidebar(); ?>
             </div><?php // #site-wrapper ?>
+
+            <?php if (is_active_sidebar('footer')) { ?>
+                <div class="site-footer__widgets widget-area--horizontal">
+                    <?php dynamic_sidebar('footer'); ?>
+                </div>
+            <?php } ?>
 
             <footer id="site-footer" role="contentinfo">
                 <div class="site-footer__copy">

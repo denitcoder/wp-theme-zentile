@@ -1,13 +1,39 @@
-.widget {
+/* Widget Area */
+.widget-area--horizontal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+.widget-area--horizontal .widget {
+    min-width: 0;
+}
+
+.widget-area--vertical .widget {
     border-bottom: 1px solid #eee;
     padding-bottom: 30px;
     margin-bottom: 30px;
-    font-size: 13px;
 }
-.widget:last-child {
+.widget-area--vertical .widget:last-child {
     border: none;
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+@media (--viewport-8) {
+    .widget-area--horizontal {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (--viewport-5) {
+    .widget-area--horizontal {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* Widget */
+.widget {
+    font-size: 13px;
 }
 
 .widget-title {

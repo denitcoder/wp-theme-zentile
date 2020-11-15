@@ -115,6 +115,16 @@ function zentile_sidebar_registration() {
         'name'          => __('Sidebar', 'zentile'),
         'description'   => __('Widgets in this area will be displayed in the left sidebar.', 'zentile'),
     ]);
+
+    register_sidebar([
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+        'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
+        'after_widget'  => '</div></div>',
+        'id'            => 'footer',
+        'name'          => __('Footer', 'zentile'),
+        'description'   => __('Widgets in this area will be displayed in the footer.', 'zentile'),
+    ]);
 }
 
 add_action('widgets_init', 'zentile_sidebar_registration');
