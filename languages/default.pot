@@ -95,36 +95,52 @@ msgid "Close navigation menu"
 msgstr ""
 
 #: components/sidebar.php:13
-#: functions.php:95
+#: functions.php:96
 msgid "Primary Menu"
 msgstr ""
 
-#: footer.php:8
+#: footer.php:17
 msgid "Y"
 msgstr ""
 
-#: footer.php:14
+#: footer.php:23
 msgid "To the top"
 msgstr ""
 
 #. translators: 1: Theme name, 2: Theme author.
-#: footer.php:24
+#: footer.php:33
 msgid "Theme %1$s by %2$s"
 msgstr ""
 
-#: functions.php:115
-msgid "Sidebar"
+#: functions.php:119
+msgid "Left Sidebar (Primary)"
 msgstr ""
 
-#: functions.php:116
+#: functions.php:120
 msgid "Widgets in this area will be displayed in the left sidebar."
 msgstr ""
 
-#: header.php:16
+#: functions.php:125
+msgid "Right Sidebar"
+msgstr ""
+
+#: functions.php:126
+msgid "Widgets in this area will be displayed in the right sidebar."
+msgstr ""
+
+#: functions.php:131
+msgid "Footer"
+msgstr ""
+
+#: functions.php:132
+msgid "Widgets in this area will be displayed in the footer."
+msgstr ""
+
+#: header.php:21
 msgid "Skip to the content"
 msgstr ""
 
-#: header.php:34
+#: header.php:39
 msgid "Open navigation menu"
 msgstr ""
 

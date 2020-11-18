@@ -96,36 +96,52 @@ msgstr "Похожие посты"
 msgid "Close navigation menu"
 msgstr "Закрыть главное меню"
 
-#: components/sidebar.php:13 functions.php:95
+#: components/sidebar.php:13 functions.php:96
 msgid "Primary Menu"
 msgstr "Главное меню"
 
-#: footer.php:8
+#: footer.php:17
 msgid "Y"
 msgstr "Y"
 
-#: footer.php:14
+#: footer.php:23
 msgid "To the top"
 msgstr "Наверх"
 
 #. translators: 1: Theme name, 2: Theme author.
-#: footer.php:24
+#: footer.php:33
 msgid "Theme %1$s by %2$s"
 msgstr "Theme %1$s by %2$s"
 
-#: functions.php:115
-msgid "Sidebar"
-msgstr "Сайдбар"
+#: functions.php:119
+msgid "Left Sidebar (Primary)"
+msgstr "Левый сайдбар"
 
-#: functions.php:116
+#: functions.php:120
 msgid "Widgets in this area will be displayed in the left sidebar."
-msgstr "Виджеты будут отображаться слева в сайдбаре"
+msgstr "Виджеты будут отображаться в левом сайдбаре"
 
-#: header.php:16
+#: functions.php:125
+msgid "Right Sidebar"
+msgstr "Правый сайдбар"
+
+#: functions.php:126
+msgid "Widgets in this area will be displayed in the right sidebar."
+msgstr "Виджеты будут отображаться в правом сайдбаре"
+
+#: functions.php:131
+msgid "Footer"
+msgstr "Подвал"
+
+#: functions.php:132
+msgid "Widgets in this area will be displayed in the footer."
+msgstr "Виджеты будут отображаться в подвале"
+
+#: header.php:21
 msgid "Skip to the content"
 msgstr "Перейти к содержимому"
 
-#: header.php:34
+#: header.php:39
 msgid "Open navigation menu"
 msgstr "Открыть главное меню"
 
