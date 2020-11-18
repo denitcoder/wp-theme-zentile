@@ -3,9 +3,11 @@
     justify-content: space-between;
     align-items: flex-start;
     font-size: 13px;
-    margin-top: 30px;
-    border-top: 1px solid #eee;
+}
+#site-footer,
+.site-footer__widgets {
     padding: 30px 20px;
+    border-top: 1px solid #eee;
 }
 
 .site-footer__scroll-top {
@@ -37,12 +39,6 @@
 .site-footer__credits {
     text-align: right;
     line-height: 1.7em;
-}
-
-.site-footer__widgets {
-    margin-top: 30px;
-    padding: 30px 20px 0;
-    border-top: 1px solid #eee;
 }
 
 @media (--viewport-7) {

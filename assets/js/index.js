@@ -19,20 +19,33 @@ domReady(() => {
     // Responsive iframes
     document.querySelectorAll('iframe').forEach(iframe => {
         if (!iframe.height || !iframe.width) return;
-        
+
         const container = iframe.parentNode;
 
         if (!container.classList.contains('wp-block-embed__wrapper')) return;
-    
+
         container.classList.add('responsive-iframe');
         container.style.paddingTop = `${iframe.height / iframe.width * 100}%`;
     });
 
     // Mobile navigation
-    const sidebar = document.querySelector('#site-sidebar');
+    const leftSidebar = document.querySelector('#site-sidebar');
 
-    if (sidebar) {
-        new OffCanvas(sidebar);
+    if (leftSidebar) {
+        new OffCanvas(leftSidebar);
+    }
+
+    // Right sidebar
+    const rightSidebar = document.querySelector('#site-sidebar-right');
+
+    if (rightSidebar) {
+        function updateRightSidebar() {
+            rightSidebar.classList.remove('widget-area--vertical', 'widget-area--horizontal');
+            rightSidebar.classList.add(window.innerWidth < 1366 ? 'widget-area--horizontal' : 'widget-area--vertical');
+        }
+
+        window.addEventListener('resize', updateRightSidebar);
+        updateRightSidebar();
     }
 
     // Dropdown menu

@@ -1,6 +1,9 @@
                 </main>
 
-                <?php zentile_cmp_sidebar(); ?>
+                <?php
+                zentile_cmp_sidebar();
+                zentile_cmp_sidebar_right();
+                ?>
             </div><?php // #site-wrapper ?>
 
             <?php if (is_active_sidebar('footer')) { ?>

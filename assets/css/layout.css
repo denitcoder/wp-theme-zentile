@@ -1,30 +1,76 @@
+body.layout--show-sidebar.page,
+body.layout--show-sidebar.single {
+    --content-width: var(--content-single-width);
+    --layout-gap: 65px;
+}
+
 #site-container {
-    max-width: 1250px;
+    max-width: var(--container-2col-width);
     margin: 0 auto;
 }
-
 #site-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: var(--sidebar-width) auto;
+    gap: var(--layout-gap);
     align-items: flex-start;
-    padding: 0 var(--site-padding);
+    padding: 0 var(--site-padding) 30px;
 }
-
 #site-content {
-    flex-grow: 1;
     order: 2;
     min-width: 0; /* flexbox text-overflow hack */
 }
+#site-sidebar {
+    order: 1;
+    width: var(--sidebar-width);
+    box-sizing: border-box;
+}
+#site-sidebar-right {
+    order: 3;
+    width: var(--sidebar-width);
+    box-sizing: border-box;
+}
 
+/* 1 column layout */
 body.layout--hide-sidebar #site-content {
     max-width: var(--content-single-width);
     margin: 0 auto;
+    grid-column: 1 / -1;
 }
-body.layout--show-sidebar.page #site-sidebar,
-body.layout--show-sidebar.single #site-sidebar {
-    margin-right: 65px;
+
+/* 3 columns layout */
+body.layout--3col #site-container {
+    max-width: var(--container-3col-width);
+}
+body.layout--3col #site-wrapper {
+    grid-template-columns: var(--sidebar-width) auto var(--sidebar-width);
+}
+
+@media (--viewport-13) {
+    body.layout--3col #site-container {
+        max-width: var(--container-2col-width);
+    }
+    body.layout--3col #site-wrapper {
+        grid-template-columns: var(--sidebar-width) auto;
+        grid-template-rows: auto auto;
+    }
+    #site-sidebar-right {
+        width: auto;
+        grid-column: 1 / -1;
+        margin: 20px -20px 0;
+        padding: 30px 20px;
+        border-top: 1px solid #eee;
+        box-sizing: content-box;
+    }
 }
 
 @media (--viewport-9) {
+    body.layout--3col #site-wrapper {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    body.layout--2col #site-content {
+        grid-column: 1 / -1;
+    }
     #site-container {
         width: auto;
     }

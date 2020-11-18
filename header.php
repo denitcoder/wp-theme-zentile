@@ -5,11 +5,16 @@
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="profile" href="https://gmpg.org/xfn/11">
-        
+
         <?php wp_head(); ?>
     </head>
 
-    <body <?php body_class(zentile_show_sidebar() ? 'layout--show-sidebar' : 'layout--hide-sidebar'); ?>>
+    <?php
+    $body_classes = [ zentile_show_sidebar() ? 'layout--show-sidebar' : 'layout--hide-sidebar' ];
+    $body_classes[] = zentile_show_sidebar() && is_active_sidebar('sidebar-right') ? 'layout--3col' : 'layout--2col';
+    ?>
+
+    <body <?php body_class($body_classes); ?>>
         <?php wp_body_open(); ?>
 
         <a class="skip-link screen-reader-text h-shadow-focus" href="#site-content">

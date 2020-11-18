@@ -23,6 +23,7 @@ require get_template_directory() . '/components/related-posts.php';
 require get_template_directory() . '/components/password-form.php';
 require get_template_directory() . '/components/logo.php';
 require get_template_directory() . '/components/sidebar.php';
+require get_template_directory() . '/components/sidebar-right.php';
 
 /**
  * Theme support
@@ -106,21 +107,26 @@ function zentile_sidebar_registration() {
     register_widget('Zentile_Widget_Recent_Comments');
     register_widget('Zentile_Widget_Recent_Posts');
 
-    register_sidebar([
+    $common_options = [
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
         'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
         'after_widget'  => '</div></div>',
+    ];
+
+    register_sidebar($common_options + [
         'id'            => 'sidebar',
-        'name'          => __('Sidebar', 'zentile'),
+        'name'          => __('Left Sidebar (Primary)', 'zentile'),
         'description'   => __('Widgets in this area will be displayed in the left sidebar.', 'zentile'),
     ]);
 
-    register_sidebar([
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-        'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
-        'after_widget'  => '</div></div>',
+    register_sidebar($common_options + [
+        'id'            => 'sidebar-right',
+        'name'          => __('Right Sidebar', 'zentile'),
+        'description'   => __('Widgets in this area will be displayed in the right sidebar.', 'zentile'),
+    ]);
+
+    register_sidebar($common_options + [
         'id'            => 'footer',
         'name'          => __('Footer', 'zentile'),
         'description'   => __('Widgets in this area will be displayed in the footer.', 'zentile'),

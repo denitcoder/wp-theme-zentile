@@ -19,7 +19,7 @@
     padding-bottom: 0;
 }
 
-@media (--viewport-8) {
+@media (--viewport-9) {
     .widget-area--horizontal {
         grid-template-columns: repeat(2, 1fr);
     }
