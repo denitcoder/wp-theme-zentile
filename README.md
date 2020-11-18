@@ -18,16 +18,22 @@ Zentile is a lightweight magazine theme inspired by Yandex.Zen.
 - Gutenberg-ready
 - Translation-ready
 - Built-in image light box
+- Related posts
+- 2 and 3 column layouts
+- 3 widget areas (left sidebar, right sidebar and footer)
 - Theme settings
     - Customizable logo
     - Customizable background
     - Show/hide featured image at the top of the post
     - Show/hide author bio at the end of the post
+    - Show/hide post navigation
+    - Show/hide related posts BEFORE comments
+    - Show/hide related posts AFTER comments
     - Always show sidebar
 - Custom widgets
-    - Categories
-    - Recent comments
-    - Recent posts
+    - Zentile: Categories
+    - Zentile: Recent comments
+    - Zentile: Recent posts
 
 ## Requirements
 
@@ -35,6 +41,11 @@ Zentile is a lightweight magazine theme inspired by Yandex.Zen.
 - Wordpress >= 5.3.x
 
 ## Installation
+
+- Go to **Appearance > Themes > Add New** and type **zentile** in the search box.
+- Click **Install** and then **Activate**.
+
+## Manual installation
 
 - Download the theme from the **[releases](https://github.com/denitcoder/wp-theme-zentile/releases)** page on GitHub (**zentile-x.y.zip**).
 - Go to **Appearance > Themes > Add New > Upload Theme** and upload the downloaded archive with the theme (**WP version < 5.5**: In order to update the theme in the future you need to install [Easy Theme and Plugin Upgrades](https://wordpress.org/plugins/easy-theme-and-plugin-upgrades/) plugin).
