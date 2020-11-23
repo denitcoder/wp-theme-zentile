@@ -66,3 +66,11 @@ function zentile_get_related_posts($post, $count) {
 
     return (new WP_Query($related_args))->posts;
 }
+
+function zentile_get_reading_time($text) {
+    $word_count = str_word_count(strip_tags($text));
+    $reading_time = round($word_count / 200);
+    $reading_time = $reading_time == 0 ? 1 : $reading_time;
+
+    return sprintf(_n('%s min read', '%s mins read', $reading_time, 'zentile'), number_format_i18n($reading_time));
+}

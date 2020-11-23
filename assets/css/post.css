@@ -20,10 +20,35 @@
 .post__meta {
     font-size: 14px;
     line-height: 1.8em;
-    color: #777;
+    color: #999;
 }
 .post__meta span {
     margin-right: 20px;
+}
+.post__meta svg {
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+.post__date {
+    white-space: nowrap;
+    color: #444;
+}
+
+.post__reading-time {
+    white-space: nowrap;
+}
+
+.post-edit-link {
+    opacity: 0.5;
+    transition: opacity .2s;
+}
+.post-edit-link:hover {
+    opacity: 1;
 }
 
 .post__categories {

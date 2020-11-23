@@ -1,7 +1,7 @@
 <?php function zentile_cmp_post() {
     the_post(); ?>
 
-    <article <?php post_class([ get_comments_number() > 0 ? '--has-comments': null, 'post' ]); ?>>
+    <article <?php post_class([ get_comments_number() > 0 ? '--has-comments' : null, 'post' ]); ?>>
         <header class="post__header">
             <?php
             if (is_singular()) {
@@ -19,7 +19,10 @@
                  */
                 if (is_singular('post')) {
                     // Date
-                    echo '<span class="post__date">' . the_time(get_option('date_format')) . '</span>';
+                    echo '<span class="post__date">' . get_the_time(get_option('date_format')) . '</span>';
+
+                    // Reading time
+                    echo '<span class="post__reading-time">' . zentile_get_theme_svg('clock') . zentile_get_reading_time(get_post()->post_content) . '</span>';
 
                     // Category
                     if (has_category()) {

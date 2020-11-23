@@ -84,7 +84,7 @@ msgstr "Войти"
 msgid "No posts yet"
 msgstr "Нет постов"
 
-#: components/post.php:70
+#: components/post.php:74
 msgid "Published by"
 msgstr "Автор публикации"
 
@@ -193,6 +193,13 @@ msgstr "Редактировать"
 #: inc/utils.php:5
 msgid "%s ago"
 msgstr "%s назад"
+
+#: inc/utils.php:75
+msgid "%s min read"
+msgid_plural "%s mins read"
+msgstr[0] "%s мин."
+msgstr[1] "%s мин."
+msgstr[2] "%s мин."
 
 #. translators: Search results
 #: search.php:8
