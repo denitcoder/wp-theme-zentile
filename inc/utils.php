@@ -74,3 +74,21 @@ function zentile_get_reading_time($text) {
 
     return sprintf(_n('%s min read', '%s mins read', $reading_time, 'zentile'), number_format_i18n($reading_time));
 }
+
+function zentile_short_number($num) {
+    if ($num < 1e3) {
+        return $num;
+    } else if ($num < 1e6) {
+        return number_format_i18n($num / 1e3, 1) . 'k';
+    } else {
+        return number_format_i18n($num / 1e6, 1) . 'm';
+    }
+}
+
+function zentile_views_enabled() {
+    return function_exists('pvc_get_post_views');
+}
+
+function zentile_get_post_views($post_id = 0) {
+    return pvc_get_post_views($post_id);
+}

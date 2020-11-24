@@ -84,7 +84,14 @@ msgstr "Войти"
 msgid "No posts yet"
 msgstr "Нет постов"
 
-#: components/post.php:74
+#: components/post.php:30
+msgid "%s view"
+msgid_plural "%s views"
+msgstr[0] "%s просмотр"
+msgstr[1] "%s просмотра"
+msgstr[2] "%s просмотров"
+
+#: components/post.php:81
 msgid "Published by"
 msgstr "Автор публикации"
 

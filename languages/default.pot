@@ -82,7 +82,13 @@ msgstr ""
 msgid "No posts yet"
 msgstr ""
 
-#: components/post.php:74
+#: components/post.php:30
+msgid "%s view"
+msgid_plural "%s views"
+msgstr[0] ""
+msgstr[1] ""
+
+#: components/post.php:81
 msgid "Published by"
 msgstr ""
 

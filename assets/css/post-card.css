@@ -179,9 +179,31 @@
 .post-card__meta {
     margin-top: 15px;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     font-size: 13px;
+}
+.post-card__meta svg {
+    height: 17px;
+    width: 17px;
+    margin-right: 5px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+.post-card__meta time {
+    margin-right: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}
+
+.post-card__views {
+    font-weight: bold;
+    white-space: nowrap;
+}
+.post-card__views:not(:last-child) {
+    margin-right: 15px;
 }
 
 .post-card__comments {
@@ -195,6 +217,7 @@
     text-align: center;
     font-weight: 700;
     position: relative;
+    top: -1px;
 }
 .post-card__comments:after {
     content: "";
@@ -253,4 +276,7 @@
 .post-card.post-card--small .post-card__title {
     font-size: 16px;
     line-height: 24px;
+}
+.post-card.post-card--small .post-card__views {
+    display: none;
 }

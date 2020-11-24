@@ -24,6 +24,14 @@
                     // Reading time
                     echo '<span class="post__reading-time">' . zentile_get_theme_svg('clock') . zentile_get_reading_time(get_post()->post_content) . '</span>';
 
+                    // Views
+                    if (zentile_views_enabled()) {
+                        $views = zentile_get_post_views();
+                        $views_text = sprintf(_n('%s view', '%s views', $views, 'zentile'), zentile_short_number($views));
+
+                        echo '<span class="post__views" title="' . $views . '">' . zentile_get_theme_svg('eye') . $views_text . '</span>';
+                    }
+
                     // Category
                     if (has_category()) {
                         echo '<span class="post__category">' . get_the_category_list(', ') . '</span>';

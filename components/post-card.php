@@ -35,6 +35,11 @@ function zentile_cmp_post_card($post = null, $classes = []) {
             // Date
             echo zentile_human_time_diff_html(get_the_time('U', $post_id));
 
+            // Views
+            if (zentile_views_enabled()) {
+                echo '<div class="post-card__views">' . zentile_get_theme_svg('eye') . zentile_get_post_views($post_id) . '</div>';
+            }
+
             // Comments
             if (zentile_show_comments_list($post_id)) {
                 echo '<div class="post-card__comments">' . get_comments_number($post_id) . '</div>';
