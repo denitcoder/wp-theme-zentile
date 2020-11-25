@@ -172,19 +172,23 @@ msgstr "Всегда показывать сайдбар"
 msgid "Show post navigation"
 msgstr "Показывать навигацию по постам"
 
-#: inc/class-zentile-customize.php:27
+#: inc/class-zentile-customize.php:26
+msgid "Show views in the post list"
+msgstr "Показывать просмотры в списке постов"
+
+#: inc/class-zentile-customize.php:28
 msgid "Show related posts BEFORE comments"
 msgstr "Показывать похожие посты ПЕРЕД комментариями"
 
-#: inc/class-zentile-customize.php:28
+#: inc/class-zentile-customize.php:29
 msgid "Number of related posts BEFORE comments"
 msgstr "Кол-во похожих постов ПЕРЕД комментариями"
 
-#: inc/class-zentile-customize.php:30
+#: inc/class-zentile-customize.php:31
 msgid "Show related posts AFTER comments"
 msgstr "Показывать похожие посты ПОСЛЕ комментариев"
 
-#: inc/class-zentile-customize.php:31
+#: inc/class-zentile-customize.php:32
 msgid "Number of related posts AFTER comments"
 msgstr "Кол-во похожих постов ПОСЛЕ комментариев"
 

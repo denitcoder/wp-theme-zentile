@@ -170,19 +170,23 @@ msgstr ""
 msgid "Show post navigation"
 msgstr ""
 
-#: inc/class-zentile-customize.php:27
-msgid "Show related posts BEFORE comments"
+#: inc/class-zentile-customize.php:26
+msgid "Show views in the post list"
 msgstr ""
 
 #: inc/class-zentile-customize.php:28
+msgid "Show related posts BEFORE comments"
+msgstr ""
+
+#: inc/class-zentile-customize.php:29
 msgid "Number of related posts BEFORE comments"
 msgstr ""
 
-#: inc/class-zentile-customize.php:30
+#: inc/class-zentile-customize.php:31
 msgid "Show related posts AFTER comments"
 msgstr ""
 
-#: inc/class-zentile-customize.php:31
+#: inc/class-zentile-customize.php:32
 msgid "Number of related posts AFTER comments"
 msgstr ""
 

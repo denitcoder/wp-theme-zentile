@@ -36,7 +36,7 @@ function zentile_cmp_post_card($post = null, $classes = []) {
             echo zentile_human_time_diff_html(get_the_time('U', $post_id));
 
             // Views
-            if (zentile_views_enabled()) {
+            if (zentile_views_enabled() && get_theme_mod('show_post_list_views', true)) {
                 echo '<div class="post-card__views">' . zentile_get_theme_svg('eye') . zentile_get_post_views($post_id) . '</div>';
             }
 

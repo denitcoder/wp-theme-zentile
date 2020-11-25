@@ -23,6 +23,7 @@ class Zentile_Customize {
         self::checkbox($wp_customize, 'show_featured_image', false, __('Show featured image at the top of the post', 'zentile'));
         self::checkbox($wp_customize, 'always_show_sidebar', false, __('Always show sidebar', 'zentile'));
         self::checkbox($wp_customize, 'show_post_nav', true, __('Show post navigation', 'zentile'));
+        self::checkbox($wp_customize, 'show_post_list_views', true, __('Show views in the post list', 'zentile'));
 
         self::checkbox($wp_customize, 'show_related_posts_before_comments', true, __('Show related posts BEFORE comments', 'zentile'));
         self::number($wp_customize, 'related_posts_before_comments_num', 4, 0, 16, __('Number of related posts BEFORE comments', 'zentile'));

@@ -19,6 +19,7 @@ Zentile is a lightweight magazine theme inspired by Yandex.Zen.
 - Translation-ready
 - Built-in image light box
 - Related posts
+- Post views (*Post Views Counter* plugin required)
 - 2 and 3 column layouts
 - 3 widget areas (left sidebar, right sidebar and footer)
 - Theme settings
@@ -27,6 +28,7 @@ Zentile is a lightweight magazine theme inspired by Yandex.Zen.
     - Show/hide featured image at the top of the post
     - Show/hide author bio at the end of the post
     - Show/hide post navigation
+    - Show/hide views in the post list
     - Show/hide related posts BEFORE comments
     - Show/hide related posts AFTER comments
     - Always show sidebar
@@ -58,7 +60,9 @@ Zentile is a lightweight magazine theme inspired by Yandex.Zen.
 - Go to **Appearance > Widgets** and add widgets **Zentile: Categories**, **Zentile: Recent Comments** and **Zentile: Recent Posts**.
 - Go to **Appearance > Customize** and customize theme as you need.
 
-## Use the dominant color in the posts gradients
+## Recommended plugins
+
+### **[Color Palette Generator](https://wordpress.org/plugins/color-palette-generator/)**
 
 If you want the post card's gradients to match its featured image dominant color, follow the steps below:
 
@@ -70,6 +74,14 @@ If you want the post card's gradients to match its featured image dominant color
 - Click **Generate**.
 
 **Notice:** The plugin automatically generate palettes for the images only if you upload them via the **Media > Add New** page, otherwise you need to generate it manually.
+
+### **[Post Views Counter](https://wordpress.org/plugins/post-views-counter/)**
+
+This plugin allows you to display how many times a post, page or custom post type had been viewed.
+
+- Install and activate plugin [Post Views Counter](https://wordpress.org/plugins/post-views-counter/).
+- Go to **Settings > Post Views Counter > Display** and uncheck all post and page types.
+- Click **Save Changes**.
 
 ## Development
 
