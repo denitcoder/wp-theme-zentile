@@ -39,6 +39,7 @@
     color: #444;
 }
 
+.post__views,
 .post__reading-time {
     white-space: nowrap;
 }
