@@ -20,7 +20,7 @@ Zentile is a lightweight magazine theme inspired by Yandex.Zen.
 - Built-in image light box
 - Related posts
 - Post views (*Post Views Counter* plugin required)
-- 2 and 3 column layouts
+- 1, 2 and 3 column layouts
 - 3 widget areas (left sidebar, right sidebar and footer)
 - Theme settings
     - Customizable logo

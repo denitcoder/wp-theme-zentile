@@ -10,8 +10,15 @@
     </head>
 
     <?php
-    $body_classes = [ zentile_show_sidebar() ? 'layout--show-sidebar' : 'layout--hide-sidebar' ];
-    $body_classes[] = zentile_show_sidebar() && is_active_sidebar('sidebar-right') ? 'layout--3col' : 'layout--2col';
+    $body_classes = [];
+
+    if (zentile_show_sidebar() && is_active_sidebar('sidebar-right')) {
+        $body_classes[] = 'layout--has-rsidebar';
+    }
+
+    if (zentile_show_sidebar() && is_active_sidebar('sidebar')) {
+        $body_classes[] = 'layout--has-lsidebar';
+    }
     ?>
 
     <body <?php body_class($body_classes); ?>>

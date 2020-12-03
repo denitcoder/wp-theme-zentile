@@ -40,8 +40,12 @@ domReady(() => {
 
     if (rightSidebar) {
         function updateRightSidebar() {
+            const isThreeColumns = document.body.classList.contains('layout--has-lsidebar') && document.body.classList.contains('layout--has-rsidebar');
+
             rightSidebar.classList.remove('widget-area--vertical', 'widget-area--horizontal');
-            rightSidebar.classList.add(window.innerWidth < 1366 ? 'widget-area--horizontal' : 'widget-area--vertical');
+            rightSidebar.classList.add((isThreeColumns && window.innerWidth < 1366) || window.innerWidth < 992
+                ? 'widget-area--horizontal'
+                : 'widget-area--vertical');
         }
 
         window.addEventListener('resize', updateRightSidebar);
