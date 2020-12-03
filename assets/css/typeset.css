@@ -37,6 +37,7 @@ body .editor-styles-wrapper [data-block],
 
 /* Image/Video ------------------------------------------------------------ */
 .typeset img {
+    max-width: 100%;
     height: auto;
 }
 .typeset figure audio,

@@ -168,6 +168,12 @@
         font-size: 15px;
     }
 }
+@media (--viewport-13) {
+    body.layout--has-lsidebar .post__comments-count,
+    body.layout--has-rsidebar .post__comments-count {
+        display: none;
+    }
+}
 @media (--viewport-9) {
     .post__comments-count {
         display: none;
