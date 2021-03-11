@@ -7,7 +7,6 @@ export class Dropdown {
         if (!this.menu) return;
 
         this.isRoot = this.element.parentElement.classList.contains('primary-menu');
-        this.menuMaxWidth = parseInt(getComputedStyle(this.menu).maxWidth, 10);
         this.onWindowClickBinded = this.onWindowClick.bind(this);
         this.classOpen = 'menu--open';
 
@@ -43,12 +42,15 @@ export class Dropdown {
     positionMenu() {
         const rightOffset = window.innerWidth - this.element.getBoundingClientRect().right;
 
-        if (rightOffset < this.menuMaxWidth) {
-            this.menu.style.right = this.isRoot ? 0 : '100%';
+        if (this.isRoot) {
+            this.menu.style.right = 0;
+            this.menu.style.left = 'auto';
+        } else if (rightOffset < this.menu.offsetWidth) {
+            this.menu.style.right = '100%';
             this.menu.style.left = 'auto';
         } else {
             this.menu.style.right = 'auto';
-            this.menu.style.left = this.isRoot ? 0 : '100%';
+            this.menu.style.left = '100%';
         }
     }
 }
