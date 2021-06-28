@@ -15,7 +15,10 @@ Zentile is a lightweight magazine theme inspired by Yandex.Zen.
 ## Features
 
 - Browsers: Edge, Chrome, Firefox, Safari, Opera
-- Languages: English, Russian
+- Languages:
+    - English
+    - Russian
+    - [Spanish](https://translate.wordpress.org/locale/es/default/wp-themes/zentile/) by [@ruudhesp](https://twitter.com/ruudhesp)
 - Responsive design
 - Gutenberg-ready
 - Translation-ready
