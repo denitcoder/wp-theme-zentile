@@ -31,3 +31,10 @@ input[type=search].search-form__input {
     fill: #ccc;
     transition: fill .2s;
 }
+
+.invisible_but_read {
+    text-indent: -9999em;
+    outline: 0;
+    margin: 0px !important;
+    line-height: 0px !important;
+}
