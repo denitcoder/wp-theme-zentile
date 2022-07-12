@@ -44,7 +44,7 @@
 }
 
 .widget ul:not([class]):not([id]) {
-    color: #aaa;
+    color: #737373;
 }
 .widget ul:not([class]):not([id]) li:not(:last-child) {
     margin-bottom: 5px;
@@ -156,7 +156,7 @@
 }
 .zentile_recentcomments__content {
     margin-bottom: 3px;
-    color: #aaa;
+    color: #737373;
 }
 
 /* Recent posts */
@@ -179,7 +179,7 @@
 }
 .zentile-widget-recent-posts__content {
     margin-top: -3px;
-    color: #aaa;
+    color: #737373;
 }
 .zentile-widget-recent-posts__item time {
     display: block;

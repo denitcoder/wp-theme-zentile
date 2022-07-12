@@ -42,6 +42,7 @@
 .post__views,
 .post__reading-time {
     white-space: nowrap;
+		color: #737373;
 }
 
 .post-edit-link {
@@ -69,7 +70,7 @@
 
 .post__tags {
     margin-top: 30px;
-    color: #aaa;
+    color: #737373;
     position: relative;
     padding-left: 23px;
     word-break: break-word;
@@ -141,7 +142,7 @@
     padding-top: 3px;
 }
 .post__author__by {
-    color: #aaa;
+    color: #737373;
 }
 .post__author__content {
     margin-top: 15px;

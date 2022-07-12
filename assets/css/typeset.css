@@ -10,7 +10,7 @@
 }
 
 .typeset hr {
-    border-bottom: 1px dashed #aaa;
+    border-bottom: 1px dashed #737373;
     margin: 0 30%;
 }
 
@@ -46,11 +46,11 @@ body .editor-styles-wrapper [data-block],
     vertical-align: top;
     border-radius: 5px;
 }
-.typeset [class^="wp-block-"] figcaption {
+.typeset [class^="wp-block-"] 	figcaption {
     margin-top: 10px;
     text-align: left;
     margin: 0;
-    color: #888;
+    color: #737373;
     font-size: 14px;
     font-style: italic;
     line-height: 22px;
@@ -99,7 +99,7 @@ body .editor-styles-wrapper [data-block],
 .typeset cite {
     margin-top: 10px;
     font-style: italic;
-    color: #aaaaaa;
+    color: #737373;
     font-size: 14px;
 }
 

@@ -13,7 +13,7 @@
     display: none;
 }
 .sidebar__close svg {
-    fill: #aaa;
+    fill: #737373;
     transition: fill .2s;
 }
 .sidebar__close:hover svg {

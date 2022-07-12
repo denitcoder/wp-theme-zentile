@@ -65,7 +65,7 @@
 }
 
 .comment__date-url {
-    color: #aaaaaa;
+    color: #737373;
     white-space: nowrap;
 }
 .comment__date-url:hover {
@@ -87,7 +87,7 @@
     font-size: 14px;
 }
 .comment__footer a {
-    color: #aaa;
+    color: #737373;
 }
 .comment__footer a:hover {
     color: #777777;
