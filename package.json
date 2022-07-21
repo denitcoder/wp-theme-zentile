@@ -26,6 +26,6 @@
         "postcss-preset-env": "^6.7.0",
         "rollup": "^2.6.0",
         "rollup-plugin-node-resolve": "^5.2.0",
-        "terser": "^4.6.11"
+        "terser": "^4.8.1"
     }
 }
