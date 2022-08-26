@@ -1,0 +1,34 @@
+services:
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:6.0.1
+    container_name: zentile
+    restart: always
+    ports:
+      - 127.0.0.1::8000:80
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wp_plugins:/var/www/html/wp-content/plugins
+      - wp_uploads:/var/www/html/wp-content/uploads
+      - .:/var/www/html/wp-content/themes/zentile
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data: {}
+  wp_plugins: {}
+  wp_uploads: {}
