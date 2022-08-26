@@ -1,6 +1,8 @@
 {
     "name": "zentile",
     "scripts": {
+        "start": "docker-compose up --remove-orphans -d",
+        "stop": "docker-compose down",
         "release": "gulp release",
         "build": "gulp build",
         "watch": "gulp watch",
