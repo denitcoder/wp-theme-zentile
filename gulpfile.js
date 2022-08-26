@@ -26,7 +26,7 @@ async function js() {
     const { output } = await bundle.generate({ format: 'iife' });
 
     // Minify
-    const { code } = terser.minify(output[0].code, {
+    const { code } = await terser.minify(output[0].code, {
         warnings: 'verbose',
         compress: {
             ecma: 6,
@@ -36,7 +36,7 @@ async function js() {
             beautify: false
         }
     });
-    
+
     // Save
     await fs.promises.mkdir(options.outputDir, { recursive: true });
     await fs.promises.writeFile(`${options.outputDir}bundle.min.js`, code);
@@ -62,7 +62,7 @@ async function processCss(options) {
     });
 
     result = postcssResult.css;
-    
+
     // Minify
     const cleancss = new CleanCSS({
         returnPromise: true,
@@ -72,7 +72,7 @@ async function processCss(options) {
             }
         }
     });
-    
+
     let { styles } = await cleancss.minify(postcssResult.css);
 
     if (typeof options.after === 'function') {
@@ -120,9 +120,9 @@ async function pack() {
 
     const outputDir = 'releases';
     const outputPath = join(outputDir, `${name}-${version}.zip`);
-    
+
     await fs.promises.mkdir(outputDir, { recursive: true });
-    
+
     return new Promise(async (resolve, reject) => {
         const output = fs.createWriteStream(outputPath);
         const archive = archiver('zip', {
@@ -134,7 +134,7 @@ async function pack() {
             resolve();
         });
         archive.on('error', reject);
-    
+
         archive.glob(
             '**/*',
             { ignore: [ `${outputDir}/**`, 'node_modules/**', '.gitignore', 'gulpfile.js', '*.json', 'README.md' ] },
