@@ -17,6 +17,7 @@ Zentile is a lightweight magazine theme inspired by Yandex.Zen.
 - Browsers: Edge, Chrome, Firefox, Safari, Opera
 - Languages:
     - English
+    - [Portuguese (Brazil)](https://translate.wordpress.org/locale/pt-br/default/wp-themes/zentile/) by [Jeferson Nunes](https://www.linkedin.com/in/jeferson-nunes/) / [@JEFERSONANUNES](https://github.com/JEFERSONANUNES)
     - Russian
     - [Spanish](https://translate.wordpress.org/locale/es/default/wp-themes/zentile/) by [@ruudhesp](https://twitter.com/ruudhesp)
 - Responsive design
@@ -90,23 +91,34 @@ This plugin allows you to display how many times a post, page or custom post typ
 
 ## Development
 
-**Requirements:** Node.js >= 12.x, Git
+**Requirements:** Node.js >= 12.x, Git, Docker and Docker Compose (optional)
+
+Installation:
 
 ```bash
-cd <wordpress>/wp-content/themes/
+# If you are not using docker then clone the repository to <wordpress>/wp-content/themes/ directory
 git clone https://github.com/denitcoder/wp-theme-zentile.git zentile
 cd zentile
 
-# install dependencies
+# Install dependencies
 npm install
 
-# compile and minify all theme assets
+# Compile and minify all theme assets
 npm run build
 
-# or watch for changes
+# (optional) Run docker-compose, the wordpress instance will be available at http://localhost:8000
+npm start
+```
+Other available commands:
+
+```bash
+# Stop docker-compose
+npm stop
+
+# Watch for changes
 npm run watch
 
-# or compile all assets and create the archive with the theme (e.g. <zentile>/releases/zentile-x.y.zip)
+# Compile all assets and create the archive with the theme (e.g. <zentile>/releases/zentile-x.y.zip)
 npm run release
 ```
 
