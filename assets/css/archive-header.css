@@ -4,7 +4,7 @@
     margin-bottom: 50px;
 }
 .archive-header__count {
-    color: #aaaaaa;
+    color: var(--secondary-color);
     font-size: 14px;
 }
 .archive-header__desc {
@@ -29,5 +29,5 @@
     border-radius: 100%;
 }
 .archive-header__title span {
-    color: #999999;
+    color: var(--secondary-color);
 }

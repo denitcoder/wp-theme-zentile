@@ -20,7 +20,7 @@
 .post__meta {
     font-size: 14px;
     line-height: 1.8em;
-    color: #999;
+    color: var(--secondary-color);
 }
 .post__meta span {
     margin-right: 20px;
@@ -69,7 +69,7 @@
 
 .post__tags {
     margin-top: 30px;
-    color: #aaa;
+    color: var(--secondary-color);
     position: relative;
     padding-left: 23px;
     word-break: break-word;
@@ -141,7 +141,7 @@
     padding-top: 3px;
 }
 .post__author__by {
-    color: #aaa;
+    color: var(--secondary-color);
 }
 .post__author__content {
     margin-top: 15px;

@@ -19,6 +19,8 @@ body {
 
     --focus-width: 3px;
     --focus-color: #fc0;
+
+    --secondary-color: #aaa;
 }
 
 @custom-media --viewport-4 (width < 480px);

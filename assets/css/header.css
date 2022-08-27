@@ -114,7 +114,7 @@ body.single #site-header {
 }
 .primary-menu > li.current_page_item > a {
     text-decoration: none;
-    color: #aaa;
+    color: var(--secondary-color);
 }
 .primary-menu > li.current_page_item > a:after {
     opacity: 0.5;

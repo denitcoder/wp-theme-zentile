@@ -34,7 +34,7 @@
 }
 
 .site-footer__copy {
-    color: #aaaaaa;
+    color: var(--secondary-color);
 }
 .site-footer__credits {
     text-align: right;
