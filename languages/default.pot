@@ -23,7 +23,7 @@ msgid "https://github.com/denitcoder/wp-theme-zentile"
 msgstr ""
 
 #. Description of the theme
-msgid "Zentile is a light-weight magazine theme inspired by Yandex.Zen. Demo: https://wpshowcase.site, Documentation: https://github.com/denitcoder/wp-theme-zentile#readme"
+msgid "Zentile is a light-weight magazine theme inspired by Yandex.Zen. Documentation: https://github.com/denitcoder/wp-theme-zentile#readme"
 msgstr ""
 
 #. Author of the theme
@@ -222,6 +222,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: searchform.php:5
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:6
 msgctxt "Placeholder"
 msgid "Search"
 msgstr ""
