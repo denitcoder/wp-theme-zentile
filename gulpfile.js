@@ -137,7 +137,7 @@ async function pack() {
 
         archive.glob(
             '**/*',
-            { ignore: [ `${outputDir}/**`, 'node_modules/**', '.gitignore', 'gulpfile.js', '*.json', 'README.md' ] },
+            { ignore: [ `${outputDir}/**`, 'node_modules/**', '.gitignore', 'gulpfile.js', '*.json', '*.yml', '*.md' ] },
             { prefix: `${name}/` }
         );
         archive.pipe(output);
