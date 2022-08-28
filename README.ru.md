@@ -8,7 +8,7 @@
 
 Zentile - легковесная тема вдохновленная сервисом Yandex.Zen.
 
-**[Скачать v1.6](https://github.com/denitcoder/wp-theme-zentile/releases/download/v1.6/zentile-1.6.zip)** • **[Changelog](https://github.com/denitcoder/wp-theme-zentile/releases)**
+**[Скачать v1.7](https://github.com/denitcoder/wp-theme-zentile/releases/download/v1.7/zentile-1.7.zip)** • **[Changelog](https://github.com/denitcoder/wp-theme-zentile/releases)**
 
 ![Screenshot](screenshot.png)
 
