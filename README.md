@@ -8,7 +8,7 @@ English • [Русский](https://github.com/denitcoder/wp-theme-zentile/blob
 
 Zentile is a lightweight magazine theme inspired by Yandex.Zen.
 
-**[Download v1.7](https://github.com/denitcoder/wp-theme-zentile/releases/download/v1.7/zentile-1.7.zip)** • **[Changelog](https://github.com/denitcoder/wp-theme-zentile/releases)**
+**[Download v1.7.1](https://github.com/denitcoder/wp-theme-zentile/releases/download/v1.7.1/zentile-1.7.1.zip)** • **[Changelog](https://github.com/denitcoder/wp-theme-zentile/releases)**
 
 ![Screenshot](screenshot.png)
 
