@@ -4,6 +4,7 @@ body {
     --sidebar-width: 250px;
     --layout-gap: 40px;
     --site-padding: 20px;
+    --site-background: #fff;
 
     --container-2col-width: calc(var(--site-padding) * 2 + var(--layout-gap) + var(--sidebar-width) + var(--content-width));
     --container-3col-width: calc(var(--site-padding) * 2 + var(--layout-gap) * 2 + var(--sidebar-width) * 2 + var(--content-width));
